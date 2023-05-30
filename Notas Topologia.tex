@@ -5,7 +5,7 @@
 
 % Set page size and margins
 % Replace `letterpaper' with`a4paper' for UK/EU standard size
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=1cm,right=1cm,marginparwidth=1.75cm]{geometry}
 
 % Useful packages
 \newtheorem{definition}{Definición}[section]
@@ -28,17 +28,17 @@
 
 \section{Contenido}
 \begin{definition}
- 	Sea $X\neq \emptyset$ una clase $\uptau$ de	subconjuntos de X es una \textcolor{blue}{Topolog'ia sobre X} si cumple:
+ 	Sea $X\neq \emptyset$ una clase $\uptau$ de	subconjuntos de X es una \textcolor{blue}{Topología sobre X} si cumple:
  	\begin{enumerate}
  	\item $\emptyset,\ X\in \uptau$
  	\item  La uni'on de una clase arbitraria de conjuntos en $\uptau$ es un miembro de $\uptau$
- 	\item La intersecci'on de una clase finita de miembres de $\uptau$ est'a en $\uptau$\\
+ 	\item La intersecci'on de una clase finita de miembres de $\uptau$ está en $\uptau$\\
  	Los miembros de $\uptau$ son los \textcolor{blue}{abiertos} de X 
 	\end{enumerate}
 \end{definition}
 \textbf{Nota: } 
 \begin{enumerate}
-	\item El par $(X,\ \uptau)$ es un \textcolor{blue}{espacio topolog'ico} 
+	\item El par $(X,\ \uptau)$ es un \textcolor{blue}{espacio topologíco} 
 	\item a los elementos de X se le llaman puntos
 \end{enumerate}
 
@@ -46,31 +46,62 @@
 \begin{theorem}
 	Los enunciados siguientes so nequivalentes
 	\begin{enumerate}
-		\item Una familia $\beta$ de subconjuntos abiertos del espacio topol'ogico $(X,\ \uptau)$ es una base para $\uptau$ si cada abierto de $\uptau$ es uni'on de miembros de $\beta$
+		\item Una familia $\beta$ de subconjuntos abiertos del espacio topológico $(X,\ \uptau)$ es una base para $\uptau$ si cada abierto de $\uptau$ es unión de miembros de $\beta$
 		\item $\beta\subset\uptau$ es una base para $\uptau$, ssi $\forall G\in \uptau,\ \forall p\in G \exists B_p\in\beta\ni p\in B_p\subset G$ 
 	\end{enumerate}
 \end{theorem}
 \begin{theorem}
-	 Sea $\beta$ una familia de subconjuntos de un conjunto no vacio X. Entonces $\beta$ es una clase para una topolog'ia $\uptau$ sobre X ssi se cumplen 
+	 Sea $\beta$ una familia de subconjuntos de un conjunto no vacio X. Entonces $\beta$ es una clase para una topología $\uptau$ sobre X ssi se cumplen 
 	 \begin{enumerate}
 	 \item X=$\cup_{b\in\beta} B$
-	 \item $\forall B, B^*\in\beta$ se tiene que B$\cap B^*$ la uni'on de miembros de $\beta \Leftrightarrow$ si p$\in B\cap B^*\exists B_p\in\beta\ni p\in B_p\subset B\cap B^*$ 
+	 \item $\forall B, B^*\in\beta$ se tiene que B$\cap B^*$ la unión de miembros de $\beta \Leftrightarrow$ si p$\in B\cap B^*\exists B_p\in\beta\ni p\in B_p\subset B\cap B^*$ 
 	 \end{enumerate}
 \end{theorem}
 \begin{theorem}
-	Sea X cualquier conjunto no vac'io y sea S una clase arbitriaria de subconjuntos de X, Entonces S puede construirse en la subbase abierta para una topolog'ia sobre X en el sentido que las intersecciones finitas de los miembros de S producen una base para dicha topolog'ia.
+	Sea X cualquier conjunto no vacío y sea S una clase arbitriaria de subconjuntos de X, Entonces S puede construirse en la subbase abierta para una topología sobre X en el sentido que las intersecciones finitas de los miembros de S producen una base para dicha topología.
 \end{theorem}
 \begin{lemma}
-Si S es subbase de las topolog'ias $\uptau$ y $\uptau^*$  sobre X $\uptau = \uptau^*$
+Si S es subbase de las topologías $\uptau$ y $\uptau^*$  sobre X $\Rightarrow\uptau = \uptau^*$
 \end{lemma}
 \begin{theorem}
-Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topolog'ia $\uptau$ sobre X, generado por S, y la intersecci'on de todoas las topolog'ias sobre X que contienen a S. 
+Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topología $\uptau$ sobre X, generado por S, y la intersección de todoas las topologías sobre X que contienen a S. 
 \end{theorem}
 \begin{theorem}{Lindelof}
-	Sea X un espacio segundo contable si un abierto no-vacio G de X se puede representar como uni'on de una clase $\{G_1\}$
-
+	Sea X un espacio segundo contable si un abierto no-vacio G de X se puede representar como unión de una clase $\{G_1\}$ de abiertos de X $\Rightarrow$ G puede representarse como unión contable de los $G_i$
 \end{theorem}
-
+\begin{theorem}
+	Todo espacio m'etrico es de Hausdorff 
+\end{theorem}
+\begin{theorem}
+	Si X es un espacio de Hausdorff, entonces cada sucesión de puntos ($X_n$) en X converga a lo más a un punto de X.
+\end{theorem}
+\begin{theorem}
+	Cada subconjunto finito A$\subset$X en un Hausdorff es cerrado
+\end{theorem}
+\begin{theorem}
+	Composición de mapeos continuos es un mapeo continuo
+\end{theorem}
+\begin{theorem}
+	 un mapeo $f:X\to Y$ entre espacios topológicos es continuo ssi es continuo en cada punto de X.
+\end{theorem}
+\begin{theorem}
+	Sea $\{f_i:X\to(Y_i,\uptau_i)\}$ una colección de mapeos definidos sobre un conjunto no vacío X sobre los espacios topológicos $(Y_i,\uptau_i)$, sea 
+	\[S=\cup_i \{f^{-1}(H):H\in\uptau_i\}\]
+	y definimos $\uptau$ como la topología sobre X generada por S, entonces:
+	\begin{enumerate}
+	\item Todas las $f_i$ son continuas con respecto a $\uptau$
+	\item Si $\uptau^*$ es la intersección de todas las topologías sobre X con respecto a las cuales las $f_i$ son continuas, entonces $\uptau=\uptau^*$
+	\item $\uptau$ es la topología menos fina sobre X tales que las $f_i$ son continuas
+	\item S es una subbase para $\uptau$
+	\end{enumerate}
+\end{theorem}
+\textbf{Compactos}
+\begin{theorem}
+	Todo subespacio cerrado de un espacio compacto es compacto
+\end{theorem}
+\begin{theorem}
+	Cualquier imagen continua de un espacio compacto es compacto
+\end{theorem}
 
 
 

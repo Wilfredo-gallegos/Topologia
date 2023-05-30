@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  30 MAY 2023 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  30 MAY 2023 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,8 +407,8 @@ File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box53
 ) (Notas Topologia.aux
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `"Notas Topologia.aux"'.
 
@@ -441,14 +441,14 @@ LaTeX Info: Redefining \% on input line 26.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
 * v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=443.57848pt
+* \textwidth=557.38951pt
 * \textheight=681.15898pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -498,28 +498,28 @@ Package hyperref Info: Link coloring ON on input line 26.
 \@outlinefile=\write3
 \openout3 = `"Notas Topologia.out"'.
 
- (Notas Topologia.bbl
+ [1
+
+{C:/Users/ThinkPad T470/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Not
+as Topologia.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [1
-
-{C:/Users/ThinkPad T470/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(Notas Topologia.aux
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+) [2] (Notas Topologia.aux
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 )
 Package rerunfilecheck Info: File `"Notas Topologia".out' has not changed.
 (rerunfilecheck)             Checksum: 98B32DA14A8CF19A3025023FA10F4165;256.
  ) 
 Here is how much of TeX's memory you used:
- 11681 strings out of 476331
- 186027 string characters out of 5783953
- 1867660 words of memory out of 5000000
- 31953 multiletter control sequences out of 15000+600000
+ 11695 strings out of 476331
+ 186161 string characters out of 5783953
+ 1871660 words of memory out of 5000000
+ 31954 multiletter control sequences out of 15000+600000
  519407 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,327b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,327b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ThinkPad T470/AppData/Local/Progr
@@ -535,9 +535,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
 y7.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmti10.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on "Notas Topologia.pdf" (1 page, 141443 bytes).
+Output written on "Notas Topologia.pdf" (2 pages, 150879 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
