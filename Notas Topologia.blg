@@ -4,11 +4,11 @@ The top-level auxiliary file: Notas Topologia.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
+I found no \citation commands---while reading file Notas Topologia.aux
 Database file #1: sample.bib
-Warning--I didn't find a database entry for "greenwade93"
 You've used 0 entries,
             2543 wiz_defined-function locations,
-            559 strings with 4466 characters,
+            558 strings with 4455 characters,
 and the built_in function-call counts, 24 in all, are:
 = -- 0
 > -- 0
@@ -47,4 +47,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There was 1 warning)
+(There was 1 error message)
