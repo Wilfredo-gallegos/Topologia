@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  30 MAY 2023 23:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  31 MAY 2023 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -533,28 +533,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--161
 
  []
 
-[2] [3]
+[2]
 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg
-, id=84, 3806.22pt x 1035.87pt>
+, id=66, 3806.22pt x 1035.87pt>
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM
 .jpeg Graphic file (type jpg)
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
 jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-05-30 at 5.18.30 PM.jpeg  used on input line 324.
+05-30 at 5.18.30 PM.jpeg  used on input line 218.
 (pdftex.def)             Requested size: 380.6443pt x 103.59306pt.
- [4 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
-jpeg>] [5] [6]
+ [3 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
+jpeg>] [4] [5]
+File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM
+.jpeg Graphic file (type jpg)
+<use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
+jpeg>
+Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
+05-30 at 5.18.30 PM.jpeg  used on input line 489.
+(pdftex.def)             Requested size: 380.6443pt x 103.59306pt.
+ [6] [7] [8]
 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.jpeg
-, id=176, 3862.43pt x 883.3pt>
+, id=224, 3862.43pt x 883.3pt>
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM
 .jpeg Graphic file (type jpg)
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.
 jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-05-30 at 8.17.33 PM.jpeg  used on input line 539.
+05-30 at 8.17.33 PM.jpeg  used on input line 739.
 (pdftex.def)             Requested size: 386.26563pt x 88.33517pt.
- [7 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.
+ [9 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.
 jpeg>] (Notas Topologia.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
@@ -563,8 +571,8 @@ Package rerunfilecheck Info: File `"Notas Topologia".out' has not changed.
 (rerunfilecheck)             Checksum: 98B32DA14A8CF19A3025023FA10F4165;256.
  ) 
 Here is how much of TeX's memory you used:
- 11911 strings out of 476331
- 189665 string characters out of 5783953
+ 11952 strings out of 476331
+ 190146 string characters out of 5783953
  1874660 words of memory out of 5000000
  32043 multiletter control sequences out of 15000+600000
  519987 words of font info for 59 fonts, out of 8000000 for 9000
@@ -589,9 +597,9 @@ ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ThinkPad T470/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
 s/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler
 /eurm10.pfb>
-Output written on "Notas Topologia.pdf" (7 pages, 568707 bytes).
+Output written on "Notas Topologia.pdf" (9 pages, 583380 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 196 named destinations out of 1000 (max. 500000)
  27 words of extra memory for PDF output out of 10000 (max. 10000000)
 

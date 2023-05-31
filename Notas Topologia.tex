@@ -202,8 +202,170 @@ Nx es cerrado bajo intersecciones y extensiones\\
 	\textbf{Compactos}
 \end{LARGE}
 \begin{definition}
-	Sea $(X,\uptau)$
+	Sea $(X,\uptau)$ un esp. top. Una clase $\{H_i\}$ de abiertos de X es una \textcolor{blue}{cubierta abierta } de X ssi $\cup_iH_i=X$
 \end{definition}
+\begin{definition}
+	Una subclase de una cubierta abierta de X que tambien es cubierta abierta es una subcubierta de la inicial
+\end{definition}
+\begin{definition}
+	Un espacio compacto es un esp. top. en la que cada cubierta abierta tiene una subcubierta abierta finita
+\end{definition}
+\begin{theorem}
+	Todo subespacio cerrado de un espacio compacto es compacto
+\end{theorem}
+\begin{theorem}
+	Cualquier imagen continua de un espacio compacto es compacto\\
+	\includegraphics[scale=.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg} 
+\end{theorem}
+\begin{theorem}
+	Los enunciados siguientes son equivalentes
+	\begin{enumerate}
+	\item X es un espacio compacto
+	\item Para cada clase $\{F_i\}$ de cerrados de X $\ni\cap_iF_i=\emptyset$, se cumple que $\{F_i\}$ contiene una subclase finita $\{F_{i_1},...,F_{i_m}\}\ni F_{i_1}\cap ...\cap F_{i_m}=\emptyset$
+\end{enumerate}
+En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados de X, $\{F_{i_1}\}\ni$ cada subclase finita tiene interseicción no vacia, entonces $\cap_iF_i\neq\emptyset$ 
+\end{theorem}
+\begin{definition}
+	Dada una clase de conjuntos $C=\{C_i\}$ se dice que C tiene la propiedad de intersecci'on finita(PIF) si para cada $c_{i_k},...,c_{i_k}$ se cumple $\bigcap\limits_{j=i} C_{ij}\neq \emptyset$
+\end{definition}
+\begin{theorem}
+	X es un espacio compacto ssi cada clase de cerrados de X que tiene la Pif tiene intersección no vacía
+\end{theorem}
+
+%teorema 16
+
+\begin{theorem}
+	Un espacio topológico es compacto si cada cubierta abierta básica tiene una subcubierta finita
+\end{theorem}
+\begin{theorem}
+	Un espacio topológico es compacto si cada cubierta abierta subbásica tiene una subcuierta finita
+\end{theorem}
+
+%teorema 18
+
+\begin{theorem}
+	Sea X un espacio $T_2$, cualquier punto y un subespacio disjunto y compacto, pueden separarse por abiertos, en el sentido que tienen vecindades disjuntas
+	
+	AGREGAR FIGURA
+\end{theorem}
+
+%teorema 19
+
+\begin{theorem}
+
+	Cada subespacio compacto de un $T_2$ es cerrado
+\end{theorem}
+\begin{theorem}
+	Un mapeo biyectivo y continuo de un espacio compacto en un espacio de Hausdorff es un homeomorfismo
+	
+	AGREGAR FIGURA
+\end{theorem}
+\begin{LARGE}
+	\textbf{Separación}
+\end{LARGE}
+\begin{definition}
+	Un espacio a X es $T_1$ si para $x,y\in X, x\neq y$ exosten vecindades G y H$\ni$
+	\[x\in G \ y \ y\not\in G\]
+	\[y\in H \ y \ x\not\in H\]
+	AGREGAR FIGURA
+\end{definition}
+\begin{theorem}
+	Un esapcio topológico es $T_1$ ssi los unitarios son cerrados
+\end{theorem}
+
+%teorema 22
+
+\begin{theorem}
+	Cada subespacio de un $T_1$ es un $T_1$
+\end{theorem}
+\begin{definition}
+	Un espacio X es \textcolor{blue}{regular} ssi satisface:\\
+	Si F es un cerrado de X y p$\in$ X $\ni$ p $\not\in$ F, existen abiertos Gy H $\ni F\subset G$ y $\{p\}\subset H$ y $G\cap H=\emptyset$
+\end{definition}
+\begin{definition}
+	Un esp. top. es $T_3$ si es regular y $T_1$
+\end{definition}
+\begin{theorem}
+	Si X es $T_3\Rightarrow$ X es $T_2$
+\end{theorem}
+\begin{definition}
+	Un espacio X es \textcolor{blue}{normal} si para $F_1$ y $F_2$ cerrados disjuntos de X existen vecindades disjuntas G y H$\ni$
+	\[F_1\subset G\ y \ F_2\subset H\]
+\end{definition}
+\begin{definition}
+	Un esp. top que es normal y $T_1$ es un $T_4$
+\end{definition}
+\begin{theorem}
+
+	Los enunciados siguietnes son equivalentes
+	\begin{enumerate}
+		\item X es normal
+		\item Si H es un superconjunto abierto del cerrado F, entonces existe un abierto G, $\ni$
+		\[F\subset G\subset \overline{G}\subset H\]
+	\end{enumerate}
+\end{theorem}
+\textbf{Propiedad: }
+Si X es $T_4\Rightarrow$ X es un $T_3$
+\begin{theorem}{Metrizaacion de Urysohn}
+	Si X es un espacio @do contable, normal y $T_1$, entonces X es \textcolor{blue}{Metrizable}
+\end{theorem}
+\begin{definition}\textbf{Completamente regular}
+	X es completamente regular si dados F un cerrado de X y $p\in X\ni p\not\in F$, entonces $\exists$ una funci'on continua $f:X\to [0,1]\ni$
+	\[f(F)=\{0\}\ y \ f(p)= 1\]
+\end{definition}
+\begin{theorem}
+	Sea D el conjunto de fracciones diádicas en [0,1], entonces $\overline{D}=$[0,1]
+\end{theorem}
+\begin{lemma}{Urysohn}
+	Sean $F_1$ y $F_2$ cerrados disjuntos de un espacio normal X, entonces existe la función continua 
+	\[f:X\to[0,1]\ni\]
+	\[f(F_1)=\{0\}\ y \ f(F_2)=\{1\}\]
+\end{lemma}
+\begin{theorem}
+	Un esapcio topológico e s$T_1$ ssi $\forall x\in X$ la sucesión x,x,x,... converga a x y solo a x
+\end{theorem}
+
+%teorema 28
+
+\begin{theorem}
+	Un espacio topológico es $T_2$ ssi cada sucesión convergente tiene límite único
+\end{theorem}
+\begin{LARGE}
+	\textbf{Redes}
+\end{LARGE}
+\begin{definition}
+	Sea D un conjunto y $\leq$ una relaci'on binaria definida sobre D que satisface las siguientes condiciones 
+	\begin{enumerate}
+		\item $\leq$ es reflexiva. x$\leq$x $\forall x\in D$
+		\item $\leq$ es transitiva
+		\item $\leq$ es dirigida, si $x,y\in D\Rightarrow\exists z\in D\ni x\leq z\ y \ y\leq z$\\
+		El par ($D,\leq$) es un conjunto dirigido
+	\end{enumerate}
+\end{definition}
+\begin{definition}
+	Una \textcolor{blue}{red} es un conjunto X que es un mapeo
+	\[w:D\to X\]
+	donde ($D,\leq$) es un conjunto dirigido
+\end{definition}
+\begin{definition}
+	Si $(X,\uptau)$ es un esp. top. y $w:D\to X$ es una red, se dice que w \textcolor{blue}{converge a $x\in X$} si para cada abierto U que contiene a X¿existe $d\in D\ni T_d:\{w(e):d\leq e\in D\}\subset U$
+\end{definition}
+\textcolor{red}{Notaci'on: }$w\to x$
+\begin{theorem}
+	Sea $(Y_i,\uptau_i)$ un espacio topológico y sea $A\subseteq X$, entonces $x\in \overline{A}$ ssi existe una red w en A$\ni\ w\to x$
+\end{theorem}
+\begin{LARGE}
+	\textbf{Subredes}
+\end{LARGE}
+\begin{definition}
+	Sea 
+\end{definition}
+
+
+
+
+
+
 
 
 
@@ -315,17 +477,21 @@ Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topolog
 
 \textbf{Compactos}
 %teorema 12
+
 \begin{theorem}
-%teorema 13
 	Todo subespacio cerrado de un espacio compacto es compacto
 \end{theorem}
+
+%teorema 13
+
 \begin{theorem}
 	Cualquier imagen continua de un espacio compacto es compacto\\
 	\includegraphics[scale=.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg} 
 \end{theorem}
+
 %teorema 14
+
 \begin{theorem}
-%teorema 15
 	Los enunciados siguientes son equivalentes
 	\begin{enumerate}
 	\item X es un espacio compacto
@@ -333,49 +499,72 @@ Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topolog
 \end{enumerate}
 En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados de X, $\{F_{i_1}\}\ni$ cada subclase finita tiene interseicción no vacia, entonces $\cap_iF_i\neq\emptyset$ 
 \end{theorem}
+
+%teorema 15
+
 \begin{theorem}
-%teorema 16
 	X es un espacio compacto ssi cada clase de cerrados de X que tiene la Pif tiene intersección no vacía
 \end{theorem}
+
+%teorema 16
+
 \begin{theorem}
-%teorema 17
+
 	Un espacio topológico es compacto si cada cubierta abierta básica tiene una subcubierta finita
 \end{theorem}
+
+%teorema 17
+
 \begin{theorem}
-%teorema 18
 	Un espacio topológico es compacto si cada cubierta abierta subbásica tiene una subcuierta finita
 \end{theorem}
+
+%teorema 18
+
 \begin{theorem}
-%teorema 19
 	Sea X un espacio $T_2$, cualquier punto y un subespacio disjunto y compacto, pueden separarse por abiertos, en el sentido que tienen vecindades disjuntas
 	
 	AGREGAR FIGURA
 \end{theorem}
+
+%teorema 19
+
 \begin{theorem}
-%teorema 20
+
 	Cada subespacio compacto de un $T_2$ es cerrado
 \end{theorem}
+
+%teorema 20
+
 \begin{theorem}
 	Un mapeo biyectivo y continuo de un espacio compacto en un espacio de Hausdorff es un homeomorfismo
 	
 	AGREGAR FIGURA
 \end{theorem}
+
+
 \textbf{Separación}
 %teorema 21
 \begin{theorem}
-%teorema 22
 	Un esapcio topológico es $T_1$ ssi los unitarios son cerrados
 \end{theorem}
+
+%teorema 22
+
 \begin{theorem}
-%teorema 23
 	Cada subespacio de un $T_1$ es un $T_1$
 \end{theorem}
+
+%teorema 23
+
 \begin{theorem}
-%teorema 24
 	Si X es $T_3\Rightarrow$ X es $T_2$
 \end{theorem}
+
+%teorema 24
+
 \begin{theorem}
-%teorema 25
+
 	Los enunciados siguietnes son equivalentes
 	\begin{enumerate}
 		\item X es normal
@@ -383,24 +572,35 @@ En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados d
 		\[F\subset G\subset \overline{G}\subset H\]
 	\end{enumerate}
 \end{theorem}
+
+%teorema 25
+
 \begin{theorem}{Metrizaacion de Urysohn}
-%teorema 26
 	Si X es un espacio @do contable, normal y $T_1$, entonces X es \textcolor{blue}{Metrizable}
 \end{theorem}
+
+%teorema 26
+
 \begin{theorem}
-%lema 2
 	Sea D el conjunto de fracciones diádicas en [0,1], entonces $\overline{D}=$[0,1]
 \end{theorem}
+
+%lema 2
+
 \begin{lemma}{Urysohn}
-%teorema 27
 	Sean $F_1$ y $F_2$ cerrados disjuntos de un espacio normal X, entonces existe la función continua 
 	\[f:X\to[0,1]\ni\]
-	\[f(F_1)-\{0\}\ y \ f(F_2)=\{1\}\]
+	\[f(F_1)=\{0\}\ y \ f(F_2)=\{1\}\]
 \end{lemma}
+
+%teorema 27
+
 \begin{theorem}
-%teorema 28
 	Un esapcio topológico e s$T_1$ ssi $\forall x\in X$ la sucesión x,x,x,... converga a x y solo a x
 \end{theorem}
+
+%teorema 28
+
 \begin{theorem}
 	Un espacio topológico es $T_2$ ssi cada sucesión convergente tiene límite único
 \end{theorem}
