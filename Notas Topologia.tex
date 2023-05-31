@@ -8,12 +8,15 @@
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=1cm,right=1cm,marginparwidth=1.75cm]{geometry}
 
 % Useful packages
+
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\theoremstyle{definition}
 \newtheorem{definition}{Definición}[section]
 \newtheorem{theorem}{Teorema}
 \newtheorem{corollary}{Corolario}[theorem]
 \newtheorem{lemma}{Lema}
-\usepackage{verbatim}
-\usepackage{amsmath}
 \usepackage{etoolbox}
 \usepackage{graphicx}
 \usepackage{upgreek}
@@ -31,8 +34,8 @@
  	Sea $X\neq \emptyset$ una clase $\uptau$ de	subconjuntos de X es una \textcolor{blue}{Topología sobre X} si cumple:
  	\begin{enumerate}
  	\item $\emptyset,\ X\in \uptau$
- 	\item  La uni'on de una clase arbitraria de conjuntos en $\uptau$ es un miembro de $\uptau$
- 	\item La intersecci'on de una clase finita de miembres de $\uptau$ está en $\uptau$\\
+ 	\item  La unión de una clase arbitraria de conjuntos en $\uptau$ es un miembro de $\uptau$
+ 	\item La intersección de una clase finita de miembres de $\uptau$ está en $\uptau$\\
  	Los miembros de $\uptau$ son los \textcolor{blue}{abiertos} de X 
 	\end{enumerate}
 \end{definition}
@@ -41,6 +44,14 @@
 	\item El par $(X,\ \uptau)$ es un \textcolor{blue}{espacio topologíco} 
 	\item a los elementos de X se le llaman puntos
 \end{enumerate}
+
+
+\textbf{Nota: } Recordar: X es $T_1$ ssi $\forall x,y\in X,\ x\neq y\exists$ abiertos U y V $\ni$
+	\[x\in U \ y \ x\not\in V\]
+	\[y\not\in U \ y \ y\in V\]
+
+
+
 
 \section{Teoremas-Lemas-Corolarios}
 \begin{theorem}
@@ -102,11 +113,155 @@ Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topolog
 \begin{theorem}
 	Cualquier imagen continua de un espacio compacto es compacto
 \end{theorem}
-
-
+\includegraphics[scale=.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg} 
+\begin{theorem}
+	Los enunciados siguientes son equivalentes
+	\begin{enumerate}
+	\item X es un espacio compacto
+	\item Para cada clase $\{F_i\}$ de cerrados de X $\ni\cap_iF_i=\emptyset$, se cumple que $\{F_i\}$ contiene una subclase finita $\{F_{i_1},...,F_{i_m}\}\ni F_{i_1}\cap ...\cap F_{i_m}=\emptyset$
+\end{enumerate}
+En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados de X, $\{F_{i_1}\}\ni$ cada subclase finita tiene interseicci'on no vacia, entonces $\cap_iF_i\neq\emptyset$ 
+\end{theorem}
+\begin{theorem}
+	X es un espacio compacto ssi cada clase de cerrados de X que tiene la Pif tiene intersecci'on no vac'ia
+\end{theorem}
+\begin{theorem}
+	Un espacio topol'ogico es compacto si cada cubierta abierta b'asica tiene una subcubierta finita
+\end{theorem}
+\begin{theorem}
+	Un espacio topol'ogico es compacto si cada cubierta abierta subb'asica tiene una subcuierta finita
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio $T_2$, cualquier punto y un subespacio disjunto y compacto, pueden separarse por abiertos, en el sentido que tienen vecindades disjuntas
+	
+	AGREGAR FIGURA
+\end{theorem}
+\begin{theorem}
+	Cada subespacio compacto de un $T_2$ es cerrado
+\end{theorem}
+\begin{theorem}
+	Un mapeo biyectivo y continuo de un espacio compacto en un espacio de Hausdorff es un homeomorfismo
+	
+	AGREGAR FIGURA
+\end{theorem}
+\textbf{Separaci'on}
+\begin{theorem}
+	Un esapcio topol'ogico es $T_1$ ssi los unitarios son cerrados
+\end{theorem}
+\begin{theorem}
+	Cada subespacio de un $T_1$ es un $T_1$
+\end{theorem}
+\begin{theorem}
+	Si X es $T_3\Rightarrow$ X es $T_2$
+\end{theorem}
+\begin{theorem}
+	Los enunciados siguietnes son equivalentes
+	\begin{enumerate}
+		\item X es normal
+		\item Si H es un superconjunto abierto del cerrado F, entonces existe un abierto G, $\ni$
+		\[F\subset G\subset \overline{G}\subset H\]
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}{Metrizaacion de Urysohn}
+	Si X es un espacio @do contable, normal y $T_1$, entonces X es \textcolor{blue}{Metrizable}
+\end{theorem}
+\begin{theorem}
+	Sea D el conjunto de fracciones di'adicas en [0,1], entonces $\overline{D}=$[0,1]
+\end{theorem}
+\begin{lemma}{Urysohn}
+	Sean $F_1$ y $F_2$ cerrados disjuntos de un espacio normal X, entonces existe la funci'on continua 
+	\[f:X\to[0,1]\ni\]
+	\[f(F_1)-\{0\}\ y \ f(F_2)=\{1\}\]
+\end{lemma}
+\begin{theorem}
+	Un esapcio topol'ogico e s$T_1$ ssi $\forall x\in X$ la sucesi'on x,x,x,... converga a x y solo a x
+\end{theorem}
+\begin{theorem}
+	Un espacio topol'ogico es $T_2$ ssi cada sucesi'on convergente tiene l'imite 'unico
+\end{theorem}
+\textbf{Redes}
+\begin{theorem}
+	Sea $(Y_i,\uptau_i)$ un espacio topol'ogico y sea $A\subseteq X$, entonces $x\in \overline{A}$ ssi existe una red w en A$\ni\ w\to x$
+\end{theorem}
+\textbf{Filtros}
+\begin{theorem}
+	Sea $X\neq\emptyset$ y $\mathcal{F}_{\alpha}\in F(x),\ \alpha\in I$. Entonces $\cap_i\mathcal{F}_{\alpha}\in F(x)$
+\end{theorem}
+\begin{theorem}
+	Sea X un conjunto y U(x) ina colecci'on de filtros sobre X. Si para cualquier $\mathcal{F}_1,\mathcal{F}_2\in U(x)$ se tiene que $\mathcal{F}_1\subset\mathcal{F}_2$ o $\mathcal{F}_2\subset\mathcal{F}_1\Rightarrow \cup U(x)$ es filtro
+\end{theorem}
+\begin{lemma}{Zorn}
+	So X es un conjunto no vacio y parcialmente ordenado $\ni$ cada cadena en X tiene cota superior, entonces X tiene un elemento maximal
+\end{lemma}
+\begin{theorem}{Tarski}
+	Sea X un conjunto y $\mathcal{F}$ un filtro sobre X. Entonces existe un ultrafiltro U sobre x $\ni \mathcal{F}\subset U$
+\end{theorem}
+\begin{theorem}
+	Sea X un conjunto y U un filtro sobre X. Entonces los enunciados soguietnes son equivalentes:
+	\begin{enumerate}
+		\item U es ultrafiltro
+		\item Par acualquier $E\subset U\ni E\cap F\neq \emptyset,\ \forall F\in U$ se tiene que $E\in U$
+		\item Si $E\subset X\Rightarrow E\in U$ o $X-E\in U$
+		\item Si $A, B\in$ X y $ A\cap B\in U\Rightarrow A\in U$ o $ B\in U$
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Una familia $\beta$ de subconjuntos no vacios de X es base de alg'un filtro sobre X ssi $\forall B_1,B_2 \in \beta\exists B_3\in\beta\ni B_3\subset B_1\cap B_2$
+\end{theorem}
+\begin{theorem}
+	Sean X un espacio topol'ogico y $\mathcal{F}$ un filtro sobre X. Entonces a familia $\beta=\{\overline{F}\ni F\in \mathcal{F}\}$ es una base de filtros
+\end{theorem}
+\begin{theorem}
+	Sean X, Y espacios topol'ogicos, $\overline{\mathcal{F}}$ un filtro sobre X y un mapeo $f:X\to Y$. Entonces $\beta_{f(\overline{\mathcal{F}})}=\{f(F):F\in \mathcal{F}\}$
+\end{theorem}
+\begin{theorem}
+	Sean X, Y espacios topol'ogicos, $\mathcal{F}$ un filtro sobre Y y un mapeo $f:X\to Y$. Si $\forall F\in \mathcal{F}$ se tiene que $f^{-1}(F)\neq\emptyset$, entonces $\beta=\{f^{-1}(F):F\in \mathcal{F}\}$
+\end{theorem}
+\begin{theorem}
+	Sea $X\neq\emptyset$, $\mathcal{F}$ un filtro sobre X y $E\subset X$. Si $B=\{F\cap E: F\in \mathcal{F}\}$ 
+y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces 
+	\begin{enumerate}
+		\item Si $F\cap E\neq \emptyset, \forall F\in \mathcal{F}\Rightarrow \beta$ es base de filtro sobre X
+		\item Si$\exists F\in \mathcal{F}\ni F\cap E = \emptyset \Rightarrow$ B' es base de filtro sobre X 
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}[Teorema 32]
+	Sea X un conjunto y U un filtro sobre X. Entonces los enunciados siguietnes son equivalentes:
+	\begin{enumerate}
+		\item U es ultrafiltro
+		\item Par acualquier $E\subset U\ni E\cap F\neq \emptyset,\ \forall F\in U$ se tiene que $E\in U$
+		\item Si $E\subset X\Rightarrow E\in U$ o $X-E\in U$
+		\item Si $A, B\in$ X y $ A\cap B\in U\Rightarrow A\in U$ o $ B\in U$
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Sean $(Y_i,\uptau)$ un espacio topol'ogico, $\mathcal{F}$ es filtro sobre X y $x\in$X. Entonces $F\to x$ s $\forall V\in N(x)\exists F\in\mathcal{F}\ni F\subset V$
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio topol'ogico. $x\in X$ y $\mathcal{F}$ un filtro sobre $X\ni F\to x$. Si G es un filtro sobre $X\ni F\subset G\Rightarrow G\to x$
+	\textbf{Notaci'on: } $\mathcal{F} \succ x$
+\end{theorem}
+\begin{theorem}
+	Sean X un espacio topol'ogico, $\mathcal{F}$ un filtro sobre X, $\beta$ una base de filtro para $\mathcal{F}$ y $x\in X$. Entonces $\mathcal{F}\to x$ ssi $\beta \to x$
+\end{theorem}
+\begin{theorem}
+	Sean X un espacio topol'ogico, $x\in X$ y $\mathcal{F}$ un filtro sobre X. Los enunciados siguientes son equivalentes:
+	\begin{enumerate}
+		\item xes un punto de acumulaci'on de $\mathcal{F}$ i.e. $\mathcal{F} \succ x$
+		\item Existe un filtro G en x $\ni\mathcal{F}\subset G$ y $G\to x$
+		\item $x\in \overline{F}, \forall F \in \mathcal{F}$. Es decir, $x\in \cap_{F\in\mathcal{F}}\overline{F}$ 
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio topol'ogico, U un ultrafiltro sobre x y $x\in X$ entonces $U \succ x$ ssi $U\to x$
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio topol'ogico $x\in X$ y $A\subset X$. Entonces, $x\in\overline{A}$ ssi existe un filtro $\mathcal{F}$ sobre X $\ni F\to x$ y $A\in\mathcal{F}$
+\end{theorem}
 
 
 \bibliographystyle{alpha}
 \bibliography{sample}
 
 \end{document}
+
