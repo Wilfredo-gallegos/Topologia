@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  30 MAY 2023 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  30 MAY 2023 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,26 +425,26 @@ LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `"Notas Topologia.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -506,30 +506,47 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 df-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 30.
  (Notas Topologia.out) (Notas Topologia.out)
 \@outlinefile=\write3
 \openout3 = `"Notas Topologia.out"'.
 
- [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+[1
 
 {C:/Users/ThinkPad T470/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+[2]
 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg
-, id=44, 3806.22pt x 1035.87pt>
+, id=48, 3806.22pt x 1035.87pt>
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM
 .jpeg Graphic file (type jpg)
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
 jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-05-30 at 5.18.30 PM.jpeg  used on input line 116.
+05-30 at 5.18.30 PM.jpeg  used on input line 177.
 (pdftex.def)             Requested size: 380.6443pt x 103.59306pt.
- [2 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
-jpeg>] [3]
-(Notas Topologia.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [4] (Notas Topologia.aux
+ [3 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
+jpeg>] [4] [5]
+<../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.jpeg
+, id=141, 3862.43pt x 883.3pt>
+File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM
+.jpeg Graphic file (type jpg)
+<use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.
+jpeg>
+Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
+05-30 at 8.17.33 PM.jpeg  used on input line 392.
+(pdftex.def)             Requested size: 386.26563pt x 88.33517pt.
+ [6 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.
+jpeg>] (Notas Topologia.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
@@ -537,33 +554,35 @@ Package rerunfilecheck Info: File `"Notas Topologia".out' has not changed.
 (rerunfilecheck)             Checksum: 98B32DA14A8CF19A3025023FA10F4165;256.
  ) 
 Here is how much of TeX's memory you used:
- 11833 strings out of 476331
- 188554 string characters out of 5783953
- 1870660 words of memory out of 5000000
- 32033 multiletter control sequences out of 15000+600000
+ 11872 strings out of 476331
+ 189232 string characters out of 5783953
+ 1874660 words of memory out of 5000000
+ 32038 multiletter control sequences out of 15000+600000
  519061 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,327b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,362b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ThinkPad T470/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ThinkPad T470/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/
-ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ThinkPad T470/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ThinkPad T470/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/
-ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7
-.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ThinkPad T470/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ThinkPad T470/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on "Notas Topologia.pdf" (4 pages, 363317 bytes).
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ThinkPad T470/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users
+/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i5.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ThinkPad T470/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ThinkPad T470/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/User
+s/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r5.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ThinkPad T470/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ThinkPad T470/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
+s/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler
+/eurm10.pfb>
+Output written on "Notas Topologia.pdf" (6 pages, 553418 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 27 words of extra memory for PDF output out of 10000 (max. 10000000)
 

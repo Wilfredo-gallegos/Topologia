@@ -14,12 +14,13 @@
 \usepackage{amsthm}
 \theoremstyle{definition}
 \newtheorem{definition}{Definición}[section]
-\newtheorem{theorem}{Teorema}
+\newtheorem{theorem}{Teorema}[section]
 \newtheorem{corollary}{Corolario}[theorem]
-\newtheorem{lemma}{Lema}
+\newtheorem{lemma}{Lema}[section]
 \usepackage{etoolbox}
 \usepackage{graphicx}
 \usepackage{upgreek}
+\newcommand{\bigslant}[2]{{\raisebox{.2em}{$#1$}\left/\raisebox{-.2em}{$#2$}\right.}}
 \usepackage{xcolor}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
@@ -44,6 +45,52 @@
 	\item El par $(X,\ \uptau)$ es un \textcolor{blue}{espacio topologíco} 
 	\item a los elementos de X se le llaman puntos
 \end{enumerate}
+\textbf{Nota: }
+Un \textcolor{blue}{Espacio Metrizable} es un espacio topol'ogico X con la propiedad que existe una m'etrica que genera los abiertos de la topolog'ia dada.\\
+
+\textbf{prop: }
+Si $\uptau_1$ y $\uptau_2$ son topolog'ias sobre X, entonces $\uptau_1\cap\uptau_2$ es topolog'ia sobre X
+\begin{definition}
+	Sea A un subconjunto no vacio del espacio topol'ogico $(X, \uptau)$. Considere la clase 
+	\[\uptau_A=\{A\cap G: G\in\uptau es abierto de X\}\]
+	a $\uptau_A$ se le llama \textcolor{blue}{topolog'ia relativa} sobre A
+\end{definition}
+\begin{definition}
+	\begin{enumerate}
+		\item Sean X y Y espacios topol'ogicos y f un mapeo entre X y Y. Se dice que f es continua si $f^{-1}(G)$ es un abierto de X para cada abierto G de Y
+		\item Se dice que el mapeo es abierto si para cada abierto G de X se cumple que f(G) es abierto de Y
+	\end{enumerate}
+\end{definition}
+\textbf{Nota: } 
+Una \textcolor{blue}{Propiedad topol'ogica} es una propiedad que si la tiene el espacio X, la tiene tambien cualquier espacio homeomorfo a X.
+\begin{definition}
+	Sea $(X,\uptau)$ un esp. top. Un subconjunto $A\subset X$ es \textcolor{blue}{cerrado} ssi $A^c\in\uptau$
+\end{definition}
+\textbf{VER DEFINICIONES DEL 18/01/23}\\
+
+\begin{definition}
+	\begin{enumerate}
+		\item un punto p de X es interior de $A\subseteq X$ si existe un abierto G $\ni p\in G\subset A$
+		\item El interior de A denotado como int(A) o $A^{\circ}$ es el conjunto de todos los puntos interiores de A
+	\end{enumerate}
+\end{definition}
+\begin{definition}
+	Un punto forntera de $A\subset X$ es un punto tal que cada vecindad del punto intersecta a A y a $A^c$
+\end{definition}
+\begin{definition}
+	Una base abierta para el espacio topologico $(X,\uptau)$ es una clase de abiertos de X talque cada abierto en $\uptau$ puede escribirse como uniones de miembros de la clase
+\end{definition}
+%teorema 1
+\begin{theorem}
+	Los enunciados siguientes so nequivalentes
+	\begin{enumerate}
+		\item Una familia $\beta$ de subconjuntos abiertos del espacio topológico $(X,\ \uptau)$ es una base para $\uptau$ si cada abierto de $\uptau$ es unión de miembros de $\beta$
+		\item $\beta\subset\uptau$ es una base para $\uptau$, ssi $\forall G\in \uptau,\ \forall p\in G \exists B_p\in\beta\ni p\in B_p\subset G$ 
+	\end{enumerate}
+\end{theorem}
+
+
+
 
 
 \textbf{Nota: } Recordar: X es $T_1$ ssi $\forall x,y\in X,\ x\neq y\exists$ abiertos U y V $\ni$
@@ -53,7 +100,9 @@
 
 
 
+\newpage
 \section{Teoremas-Lemas-Corolarios}
+%teorema 1
 \begin{theorem}
 	Los enunciados siguientes so nequivalentes
 	\begin{enumerate}
@@ -61,7 +110,9 @@
 		\item $\beta\subset\uptau$ es una base para $\uptau$, ssi $\forall G\in \uptau,\ \forall p\in G \exists B_p\in\beta\ni p\in B_p\subset G$ 
 	\end{enumerate}
 \end{theorem}
+%teorema 2
 \begin{theorem}
+%teorema 3
 	 Sea $\beta$ una familia de subconjuntos de un conjunto no vacio X. Entonces $\beta$ es una clase para una topología $\uptau$ sobre X ssi se cumplen 
 	 \begin{enumerate}
 	 \item X=$\cup_{b\in\beta} B$
@@ -69,30 +120,39 @@
 	 \end{enumerate}
 \end{theorem}
 \begin{theorem}
+%lema 1 
 	Sea X cualquier conjunto no vacío y sea S una clase arbitriaria de subconjuntos de X, Entonces S puede construirse en la subbase abierta para una topología sobre X en el sentido que las intersecciones finitas de los miembros de S producen una base para dicha topología.
 \end{theorem}
 \begin{lemma}
+%teorema 4
 Si S es subbase de las topologías $\uptau$ y $\uptau^*$  sobre X $\Rightarrow\uptau = \uptau^*$
 \end{lemma}
 \begin{theorem}
+%teorema 5 lindelof
 Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topología $\uptau$ sobre X, generado por S, y la intersección de todoas las topologías sobre X que contienen a S. 
 \end{theorem}
-\begin{theorem}{Lindelof}
+\begin{theorem}{\textbf{Lindelof}}
+%teorema 6
 	Sea X un espacio segundo contable si un abierto no-vacio G de X se puede representar como unión de una clase $\{G_1\}$ de abiertos de X $\Rightarrow$ G puede representarse como unión contable de los $G_i$
 \end{theorem}
 \begin{theorem}
+%teorema 7
 	Todo espacio m'etrico es de Hausdorff 
 \end{theorem}
 \begin{theorem}
+%teorema 8
 	Si X es un espacio de Hausdorff, entonces cada sucesión de puntos ($X_n$) en X converga a lo más a un punto de X.
 \end{theorem}
 \begin{theorem}
+%teorema 9
 	Cada subconjunto finito A$\subset$X en un Hausdorff es cerrado
 \end{theorem}
 \begin{theorem}
+%teorema 10
 	Composición de mapeos continuos es un mapeo continuo
 \end{theorem}
 \begin{theorem}
+%teorema 11
 	 un mapeo $f:X\to Y$ entre espacios topológicos es continuo ssi es continuo en cada punto de X.
 \end{theorem}
 \begin{theorem}
@@ -107,36 +167,45 @@ Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topolog
 	\end{enumerate}
 \end{theorem}
 \textbf{Compactos}
+%teorema 12
 \begin{theorem}
+%teorema 13
 	Todo subespacio cerrado de un espacio compacto es compacto
 \end{theorem}
 \begin{theorem}
-	Cualquier imagen continua de un espacio compacto es compacto
+	Cualquier imagen continua de un espacio compacto es compacto\\
+	\includegraphics[scale=.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg} 
 \end{theorem}
-\includegraphics[scale=.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg} 
+%teorema 14
 \begin{theorem}
+%teorema 15
 	Los enunciados siguientes son equivalentes
 	\begin{enumerate}
 	\item X es un espacio compacto
 	\item Para cada clase $\{F_i\}$ de cerrados de X $\ni\cap_iF_i=\emptyset$, se cumple que $\{F_i\}$ contiene una subclase finita $\{F_{i_1},...,F_{i_m}\}\ni F_{i_1}\cap ...\cap F_{i_m}=\emptyset$
 \end{enumerate}
-En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados de X, $\{F_{i_1}\}\ni$ cada subclase finita tiene interseicci'on no vacia, entonces $\cap_iF_i\neq\emptyset$ 
+En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados de X, $\{F_{i_1}\}\ni$ cada subclase finita tiene interseicción no vacia, entonces $\cap_iF_i\neq\emptyset$ 
 \end{theorem}
 \begin{theorem}
-	X es un espacio compacto ssi cada clase de cerrados de X que tiene la Pif tiene intersecci'on no vac'ia
+%teorema 16
+	X es un espacio compacto ssi cada clase de cerrados de X que tiene la Pif tiene intersección no vacía
 \end{theorem}
 \begin{theorem}
-	Un espacio topol'ogico es compacto si cada cubierta abierta b'asica tiene una subcubierta finita
+%teorema 17
+	Un espacio topológico es compacto si cada cubierta abierta básica tiene una subcubierta finita
 \end{theorem}
 \begin{theorem}
-	Un espacio topol'ogico es compacto si cada cubierta abierta subb'asica tiene una subcuierta finita
+%teorema 18
+	Un espacio topológico es compacto si cada cubierta abierta subbásica tiene una subcuierta finita
 \end{theorem}
 \begin{theorem}
+%teorema 19
 	Sea X un espacio $T_2$, cualquier punto y un subespacio disjunto y compacto, pueden separarse por abiertos, en el sentido que tienen vecindades disjuntas
 	
 	AGREGAR FIGURA
 \end{theorem}
 \begin{theorem}
+%teorema 20
 	Cada subespacio compacto de un $T_2$ es cerrado
 \end{theorem}
 \begin{theorem}
@@ -144,17 +213,22 @@ En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados d
 	
 	AGREGAR FIGURA
 \end{theorem}
-\textbf{Separaci'on}
+\textbf{Separación}
+%teorema 21
 \begin{theorem}
-	Un esapcio topol'ogico es $T_1$ ssi los unitarios son cerrados
+%teorema 22
+	Un esapcio topológico es $T_1$ ssi los unitarios son cerrados
 \end{theorem}
 \begin{theorem}
+%teorema 23
 	Cada subespacio de un $T_1$ es un $T_1$
 \end{theorem}
 \begin{theorem}
+%teorema 24
 	Si X es $T_3\Rightarrow$ X es $T_2$
 \end{theorem}
 \begin{theorem}
+%teorema 25
 	Los enunciados siguietnes son equivalentes
 	\begin{enumerate}
 		\item X es normal
@@ -163,37 +237,48 @@ En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados d
 	\end{enumerate}
 \end{theorem}
 \begin{theorem}{Metrizaacion de Urysohn}
+%teorema 26
 	Si X es un espacio @do contable, normal y $T_1$, entonces X es \textcolor{blue}{Metrizable}
 \end{theorem}
 \begin{theorem}
-	Sea D el conjunto de fracciones di'adicas en [0,1], entonces $\overline{D}=$[0,1]
+%lema 2
+	Sea D el conjunto de fracciones diádicas en [0,1], entonces $\overline{D}=$[0,1]
 \end{theorem}
 \begin{lemma}{Urysohn}
-	Sean $F_1$ y $F_2$ cerrados disjuntos de un espacio normal X, entonces existe la funci'on continua 
+%teorema 27
+	Sean $F_1$ y $F_2$ cerrados disjuntos de un espacio normal X, entonces existe la función continua 
 	\[f:X\to[0,1]\ni\]
 	\[f(F_1)-\{0\}\ y \ f(F_2)=\{1\}\]
 \end{lemma}
 \begin{theorem}
-	Un esapcio topol'ogico e s$T_1$ ssi $\forall x\in X$ la sucesi'on x,x,x,... converga a x y solo a x
+%teorema 28
+	Un esapcio topológico e s$T_1$ ssi $\forall x\in X$ la sucesión x,x,x,... converga a x y solo a x
 \end{theorem}
 \begin{theorem}
-	Un espacio topol'ogico es $T_2$ ssi cada sucesi'on convergente tiene l'imite 'unico
+	Un espacio topológico es $T_2$ ssi cada sucesión convergente tiene límite único
 \end{theorem}
 \textbf{Redes}
+%teorema 29
 \begin{theorem}
-	Sea $(Y_i,\uptau_i)$ un espacio topol'ogico y sea $A\subseteq X$, entonces $x\in \overline{A}$ ssi existe una red w en A$\ni\ w\to x$
+	Sea $(Y_i,\uptau_i)$ un espacio topológico y sea $A\subseteq X$, entonces $x\in \overline{A}$ ssi existe una red w en A$\ni\ w\to x$
 \end{theorem}
 \textbf{Filtros}
+%teorema 30
 \begin{theorem}
+
+%teorema 31
 	Sea $X\neq\emptyset$ y $\mathcal{F}_{\alpha}\in F(x),\ \alpha\in I$. Entonces $\cap_i\mathcal{F}_{\alpha}\in F(x)$
 \end{theorem}
 \begin{theorem}
-	Sea X un conjunto y U(x) ina colecci'on de filtros sobre X. Si para cualquier $\mathcal{F}_1,\mathcal{F}_2\in U(x)$ se tiene que $\mathcal{F}_1\subset\mathcal{F}_2$ o $\mathcal{F}_2\subset\mathcal{F}_1\Rightarrow \cup U(x)$ es filtro
+%lema 3
+	Sea X un conjunto y U(x) ina colección de filtros sobre X. Si para cualquier $\mathcal{F}_1,\mathcal{F}_2\in U(x)$ se tiene que $\mathcal{F}_1\subset\mathcal{F}_2$ o $\mathcal{F}_2\subset\mathcal{F}_1\Rightarrow \cup U(x)$ es filtro
 \end{theorem}
 \begin{lemma}{Zorn}
+%teorema 32
 	So X es un conjunto no vacio y parcialmente ordenado $\ni$ cada cadena en X tiene cota superior, entonces X tiene un elemento maximal
 \end{lemma}
-\begin{theorem}{Tarski}
+\begin{theorem}{\textbf{Tarski}}
+%teorema 33
 	Sea X un conjunto y $\mathcal{F}$ un filtro sobre X. Entonces existe un ultrafiltro U sobre x $\ni \mathcal{F}\subset U$
 \end{theorem}
 \begin{theorem}
@@ -205,19 +290,25 @@ En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados d
 		\item Si $A, B\in$ X y $ A\cap B\in U\Rightarrow A\in U$ o $ B\in U$
 	\end{enumerate}
 \end{theorem}
+%teorema 34
 \begin{theorem}
-	Una familia $\beta$ de subconjuntos no vacios de X es base de alg'un filtro sobre X ssi $\forall B_1,B_2 \in \beta\exists B_3\in\beta\ni B_3\subset B_1\cap B_2$
+	Una familia $\beta$ de subconjuntos no vacios de X es base de algún filtro sobre X ssi $\forall B_1,B_2 \in \beta\exists B_3\in\beta\ni B_3\subset B_1\cap B_2$
+\end{theorem}
+%teorema 35
+\begin{theorem}
+%teorema 36
+	Sean X un espacio topológico y $\mathcal{F}$ un filtro sobre X. Entonces a familia $\beta=\{\overline{F}\ni F\in \mathcal{F}\}$ es una base de filtros
 \end{theorem}
 \begin{theorem}
-	Sean X un espacio topol'ogico y $\mathcal{F}$ un filtro sobre X. Entonces a familia $\beta=\{\overline{F}\ni F\in \mathcal{F}\}$ es una base de filtros
+%teorema 37
+	Sean X, Y espacios topológicos, $\overline{\mathcal{F}}$ un filtro sobre X y un mapeo $f:X\to Y$. Entonces $\beta_{f(\overline{\mathcal{F}})}=\{f(F):F\in \mathcal{F}\}$
 \end{theorem}
 \begin{theorem}
-	Sean X, Y espacios topol'ogicos, $\overline{\mathcal{F}}$ un filtro sobre X y un mapeo $f:X\to Y$. Entonces $\beta_{f(\overline{\mathcal{F}})}=\{f(F):F\in \mathcal{F}\}$
+%teorema 38
+	Sean X, Y espacios topológicos, $\mathcal{F}$ un filtro sobre Y y un mapeo $f:X\to Y$. Si $\forall F\in \mathcal{F}$ se tiene que $f^{-1}(F)\neq\emptyset$, entonces $\beta=\{f^{-1}(F):F\in \mathcal{F}\}$
 \end{theorem}
 \begin{theorem}
-	Sean X, Y espacios topol'ogicos, $\mathcal{F}$ un filtro sobre Y y un mapeo $f:X\to Y$. Si $\forall F\in \mathcal{F}$ se tiene que $f^{-1}(F)\neq\emptyset$, entonces $\beta=\{f^{-1}(F):F\in \mathcal{F}\}$
-\end{theorem}
-\begin{theorem}
+%teorema 39
 	Sea $X\neq\emptyset$, $\mathcal{F}$ un filtro sobre X y $E\subset X$. Si $B=\{F\cap E: F\in \mathcal{F}\}$ 
 y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces 
 	\begin{enumerate}
@@ -226,6 +317,7 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 	\end{enumerate}
 \end{theorem}
 \begin{theorem}[Teorema 32]
+%teorema 40
 	Sea X un conjunto y U un filtro sobre X. Entonces los enunciados siguietnes son equivalentes:
 	\begin{enumerate}
 		\item U es ultrafiltro
@@ -235,33 +327,112 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 	\end{enumerate}
 \end{theorem}
 \begin{theorem}
-	Sean $(Y_i,\uptau)$ un espacio topol'ogico, $\mathcal{F}$ es filtro sobre X y $x\in$X. Entonces $F\to x$ s $\forall V\in N(x)\exists F\in\mathcal{F}\ni F\subset V$
+%teorema 41
+	Sean $(X,\uptau)$ un espacio topológico, $\mathcal{F}$ es filtro sobre X y $x\in$X. Entonces $F\to x$ s $\forall V\in N(x)\exists F\in\mathcal{F}\ni F\subset V$
 \end{theorem}
 \begin{theorem}
-	Sea X un espacio topol'ogico. $x\in X$ y $\mathcal{F}$ un filtro sobre $X\ni F\to x$. Si G es un filtro sobre $X\ni F\subset G\Rightarrow G\to x$
-	\textbf{Notaci'on: } $\mathcal{F} \succ x$
+%teorema 42
+	Sea X un espacio topológico. $x\in X$ y $\mathcal{F}$ un filtro sobre $X\ni F\to x$. Si G es un filtro sobre $X\ni F\subset G\Rightarrow G\to x$
+	\textbf{Notación: } $\mathcal{F} \succ x$
 \end{theorem}
 \begin{theorem}
-	Sean X un espacio topol'ogico, $\mathcal{F}$ un filtro sobre X, $\beta$ una base de filtro para $\mathcal{F}$ y $x\in X$. Entonces $\mathcal{F}\to x$ ssi $\beta \to x$
+%teorema 43
+	Sean X un espacio topológico, $\mathcal{F}$ un filtro sobre X, $\beta$ una base de filtro para $\mathcal{F}$ y $x\in X$. Entonces $\mathcal{F}\to x$ ssi $\beta \to x$
 \end{theorem}
 \begin{theorem}
-	Sean X un espacio topol'ogico, $x\in X$ y $\mathcal{F}$ un filtro sobre X. Los enunciados siguientes son equivalentes:
+%teorema 44
+	Sean X un espacio topológico, $x\in X$ y $\mathcal{F}$ un filtro sobre X. Los enunciados siguientes son equivalentes:
 	\begin{enumerate}
-		\item xes un punto de acumulaci'on de $\mathcal{F}$ i.e. $\mathcal{F} \succ x$
+		\item xes un punto de acumulación de $\mathcal{F}$ i.e. $\mathcal{F} \succ x$
 		\item Existe un filtro G en x $\ni\mathcal{F}\subset G$ y $G\to x$
 		\item $x\in \overline{F}, \forall F \in \mathcal{F}$. Es decir, $x\in \cap_{F\in\mathcal{F}}\overline{F}$ 
 	\end{enumerate}
 \end{theorem}
 \begin{theorem}
-	Sea X un espacio topol'ogico, U un ultrafiltro sobre x y $x\in X$ entonces $U \succ x$ ssi $U\to x$
+%teorema 45
+	Sea X un espacio topológico, U un ultrafiltro sobre x y $x\in X$ entonces $U \succ x$ ssi $U\to x$
 \end{theorem}
 \begin{theorem}
-	Sea X un espacio topol'ogico $x\in X$ y $A\subset X$. Entonces, $x\in\overline{A}$ ssi existe un filtro $\mathcal{F}$ sobre X $\ni F\to x$ y $A\in\mathcal{F}$
+%teorema 46
+	Sea X un espacio topológico $x\in X$ y $A\subset X$. Entonces, $x\in\overline{A}$ ssi existe un filtro $\mathcal{F}$ sobre X $\ni F\to x$ y $A\in\mathcal{F}$
+\end{theorem}
+\begin{theorem}
+%teorema 47
+	Sean X,Y espacios topológicos, $x\in X$  y $f:X\to Y$ una función. Entonces f es continua en x ssi la base de filtros $B_{f(N(x))}=\{f(V):V\in N(x)\}$ converge a f(x)
+\end{theorem}
+\begin{theorem}
+%teorema 48
+	Sea $I\neq\emptyset$ y $\{X_i,\uptau_i\}\ni i\in I$ una colección de espacios topológicos. Sean $(\prod_{i\in I}x_i,\uptau_p)$ el espacio producto y $\mathcal{F}$ un filtro sobre $\prod_{i\in I}x_i$. Entonces $\mathcal{F}\to x$ ssi $\prod_{i}(\mathcal{F})\to \prod_i(x)$ en $(X_i,\uptau_i) \forall i\in I$
+\end{theorem}
+\begin{theorem}
+%teorema 49
+	Sea X un espacio topológico. Los enunciados siguientes son equivalentes:
+	\begin{enumerate}
+		\item X es compacto
+		\item Toda colección \textbf{A} de conjuntos cerrados no vacios con la PIF, cumple que $\cap A\neq\emptyset$
+		\item Para todo filtro $\mathcal{F}$ sobre X $\exists x\in X\ni \mathcal{F} \succ x$
+		\item Todo ultrafiltro sobre X converge
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}\textbf{Tikonov}
+%lema 4
+	Sea $I\neq\emptyset$ y $\{X_i,\uptau_i\}\ni i\in I$ una colección de espacios topológicos. Entonces $(\prod_{i\in I}x_i,\uptau_p)$ es compacto ssi $x_i$ es compacto $\forall i \in I$
+\end{theorem}
+\begin{lemma}
+%teorema 50
+	Sean X y Y espacios topológicos, $f:X\to Y$ un mapeo y U un ultrafiltro sobre X. Entonces F(U) *Filtro generado por $\beta = \{f(F):F\in U\}$* es un ultrafiltro sobre Y
+\end{lemma}
+\begin{theorem}
+%teorema 51
+	Si X y Y son espacios topológicos y $f:X\to Y$ es un mapeo continuo sobre yectivo y abierto o cerrado, la topología $\uptau$ de Y es la topología Cociente $\uptau_f$
+\end{theorem}
+\begin{theorem}
+%teorema 52
+	Sea Y un espacio topológico dotado de la topologia cociente, inducida por el mapeo $f:X\to Y$. Entonces un mapeo arbitrario $g:Y\to Z$ es continuo ssi $g\circ f:X\to Z$ es continuo\\
+\includegraphics[scale=0.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.jpeg} 
+\end{theorem}
+\begin{theorem}
+
+	\begin{enumerate}
+		\item U es una topología para $\bigslant{X}{G}$
+		\item Si $\bigslant{X}{G}$ tiene la topología cociente, entonces p es continua. *$p:X\to\bigslant{X}{G}\ni p(x)=[x]$*
+		\item Si V es una topología para $\bigslant{X}{G}\ni$ p es continua, entoncres $V\subset U$
+		\item Si $\bigslant{X}{G}$ tiene la topología cociente y su $A\subset \bigslant{X}{G}\ni p^{-1}(A)$ es cerrado de X $\Rightarrow$ A es cerrado en $\bigslant{X}{G}$
+	\end{enumerate}
+\end{theorem}
+\textbf{Clase virtual 26-05-23}
+%lema 5
+\begin{lemma}
+	$\forall A\subset Y$, $\Phi_f^{-1}(A)=p(f^{-1}(A))$
+\end{lemma}
+%lema 6
+\begin{lemma}
+	$\forall B\subset \bigslant{X}{G_f}$, $\Phi_f(B)=f(p^{-1}(B))$
+\end{lemma}
+%teorema 53
+\begin{theorem}
+	Sean $f:X\to Y$ continua y sobreyectiva y  $\bigslant{X}{G_f}$ dotado de la topología cociente. Entonces $\Phi_f:\bigslant{X}{G_f}\to Y$ es continua
+\end{theorem}
+%teorema 54
+\begin{theorem}
+%teorema 55
+	Suponga que $f:X\to Y$ es continua y sobreyectiva. Si f es abierta o cerrada, entonces 
+	\[ \bigslant{\Phi}{G_f}\to Y\]
+	es un homeomorfismo
+\end{theorem}
+\begin{theorem}
+%teorema 56
+	Si X es compacto, el espacio Y es Hausdorff y $f:X\to Y$ es continua y sobreyectiva, $\Rightarrow \Phi_f:\bigslant{X}{G_f}\to Y$ es homeomorfismo
+\end{theorem}
+\begin{theorem}
+	Los enunciados siguientes son equivalentes:
+	\begin{enumerate}
+		\item X es regular
+		\item Si U es un abierto de X y si $x\in U$ entonces existe un abierto V de $x\ni x\in V$ y $\overline{V}\subset U$
+		\item Cada $x\in X$ tiene una base de vecindades que consiste de cerrados
+	\end{enumerate}
 \end{theorem}
 
-
-\bibliographystyle{alpha}
-\bibliography{sample}
 
 \end{document}
 
