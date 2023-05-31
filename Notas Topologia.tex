@@ -46,23 +46,23 @@
 	\item a los elementos de X se le llaman puntos
 \end{enumerate}
 \textbf{Nota: }
-Un \textcolor{blue}{Espacio Metrizable} es un espacio topol'ogico X con la propiedad que existe una m'etrica que genera los abiertos de la topolog'ia dada.\\
+Un \textcolor{blue}{Espacio Metrizable} es un espacio topológico X con la propiedad que existe una métrica que genera los abiertos de la topología dada.\\
 
 \textbf{prop: }
-Si $\uptau_1$ y $\uptau_2$ son topolog'ias sobre X, entonces $\uptau_1\cap\uptau_2$ es topolog'ia sobre X
+Si $\uptau_1$ y $\uptau_2$ son topologías sobre X, entonces $\uptau_1\cap\uptau_2$ es topología sobre X
 \begin{definition}
-	Sea A un subconjunto no vacio del espacio topol'ogico $(X, \uptau)$. Considere la clase 
+	Sea A un subconjunto no vacio del espacio topológico $(X, \uptau)$. Considere la clase 
 	\[\uptau_A=\{A\cap G: G\in\uptau es abierto de X\}\]
-	a $\uptau_A$ se le llama \textcolor{blue}{topolog'ia relativa} sobre A
+	a $\uptau_A$ se le llama \textcolor{blue}{topología relativa} sobre A
 \end{definition}
 \begin{definition}
 	\begin{enumerate}
-		\item Sean X y Y espacios topol'ogicos y f un mapeo entre X y Y. Se dice que f es continua si $f^{-1}(G)$ es un abierto de X para cada abierto G de Y
+		\item Sean X y Y espacios topológicos y f un mapeo entre X y Y. Se dice que f es continua si $f^{-1}(G)$ es un abierto de X para cada abierto G de Y
 		\item Se dice que el mapeo es abierto si para cada abierto G de X se cumple que f(G) es abierto de Y
 	\end{enumerate}
 \end{definition}
 \textbf{Nota: } 
-Una \textcolor{blue}{Propiedad topol'ogica} es una propiedad que si la tiene el espacio X, la tiene tambien cualquier espacio homeomorfo a X.
+Una \textcolor{blue}{Propiedad topológica} es una propiedad que si la tiene el espacio X, la tiene tambien cualquier espacio homeomorfo a X.
 \begin{definition}
 	Sea $(X,\uptau)$ un esp. top. Un subconjunto $A\subset X$ es \textcolor{blue}{cerrado} ssi $A^c\in\uptau$
 \end{definition}
@@ -80,7 +80,8 @@ Una \textcolor{blue}{Propiedad topol'ogica} es una propiedad que si la tiene el 
 \begin{definition}
 	Una base abierta para el espacio topologico $(X,\uptau)$ es una clase de abiertos de X talque cada abierto en $\uptau$ puede escribirse como uniones de miembros de la clase
 \end{definition}
-%teorema 1
+
+
 \begin{theorem}
 	Los enunciados siguientes so nequivalentes
 	\begin{enumerate}
@@ -88,6 +89,128 @@ Una \textcolor{blue}{Propiedad topol'ogica} es una propiedad que si la tiene el 
 		\item $\beta\subset\uptau$ es una base para $\uptau$, ssi $\forall G\in \uptau,\ \forall p\in G \exists B_p\in\beta\ni p\in B_p\subset G$ 
 	\end{enumerate}
 \end{theorem}
+\begin{theorem}
+	 Sea $\beta$ una familia de subconjuntos de un conjunto no vacio X. Entonces $\beta$ es una clase para una topología $\uptau$ sobre X ssi se cumplen 
+	 \begin{enumerate}
+	 \item X=$\cup_{b\in\beta} B$
+	 \item $\forall B, B^*\in\beta$ se tiene que B$\cap B^*$ la unión de miembros de $\beta \Leftrightarrow$ si p$\in B\cap B^*\exists B_p\in\beta\ni p\in B_p\subset B\cap B^*$ 
+	 \end{enumerate}
+\end{theorem}
+\begin{definition}
+	Sea $(X,\uptau)$ un esp. top. Una subclase S de abiertos en $\uptau$ es una subbase de la topología $\uptau$ si las intersecciones finitas de miembros de S producen una base para $\uptau$
+\end{definition}
+\begin{theorem}
+	Sea X cualquier conjunto no vacío y sea S una clase arbitriaria de subconjuntos de X, Entonces S puede construirse en la subbase abierta para una topología sobre X en el sentido que las intersecciones finitas de los miembros de S producen una base para dicha topología.
+\end{theorem}
+\begin{lemma}
+Si S es subbase de las topologías $\uptau$ y $\uptau^*$  sobre X $\Rightarrow\uptau = \uptau^*$
+\end{lemma}
+\begin{theorem}
+Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topología $\uptau$ sobre X, generado por S, y la intersección de todoas las topologías sobre X que contienen a S. 
+\end{theorem}
+\begin{definition}
+	Un espacio topológico que tiene una base contable es un \textcolor{blue}{segundo contable}
+\end{definition}
+\begin{theorem}{\textbf{Lindelof}}
+	Sea X un espacio segundo contable si un abierto no-vacio G de X se puede representar como unión de una clase $\{G_1\}$ de abiertos de X $\Rightarrow$ G puede representarse como unión contable de los $G_i$
+\end{theorem}
+\begin{definition}{\textbf{Espacios de Hausdorff}}
+	Un espacio topológico X es de Hausdorff si dados $x,y\in X, x\neq y$, existen abiertos U,V de X $\ni x\in U,y\in V$ y $U\cap V = \emptyset$
+\end{definition}
+\begin{theorem}
+	Todo espacio métrico es de Hausdorff 
+\end{theorem}
+\begin{definition}{\textbf{Convergencia}}
+	Sea ($X_n$) una sucesión en un espacio topológico X, se dice que ($X_n$) convege a un punto y de X, si para cada vecindad U de y $\exists N\in \mathbf{Z}^+\ni$ si n$\geq N\Rightarrow x\in U$ En este caso y es limite de ($X_n$), y se denota $X_n\to y$
+\end{definition}	
+\begin{theorem}
+	Si X es un espacio de Hausdorff, entonces cada sucesión de puntos ($X_n$) en X converga a lo más a un punto de X.
+\end{theorem}
+\begin{theorem}
+	Cada subconjunto finito A$\subset$X en un Hausdorff es cerrado
+\end{theorem}
+
+
+\textbf{Continuidad}
+
+
+\begin{definition}
+	Sean $(X,\uptau)$ y $(X,\uptau^*)$ espacios top. El mapeo $f:X\to Y$ es \textcolor{blue}{continuo} si para cada $G\in\uptau^*$ se tiene que $f^{-1}(G)\in\uptau$
+\end{definition}
+\textbf{Propiedad: } 
+Sea $f:X\to Y$ un mapeo entre espacios topológicos. Entonces f es continuo ssi $f(\overline{A})\subset \overline{f(A)}\forall A\subseteq X$
+\begin{theorem}
+	Composición de mapeos continuos es un mapeo continuo
+\end{theorem}
+\textbf{Propiedad: } 
+Sea $\{\uptau_i\}$ una colección de topologías sobre X. Si $f:X\to Y$ es continuo respecto a cada $\uptau_i\Rightarrow$ f es continua respecto a $\uptau=\cap_i\uptau_i$
+\textbf{Propiedad: }
+Sea $f:(X,\uptau)\to(Y,\uptau ')$ un mapeo continuo. Si $A\subset X\Rightarrow\ f|_A:(A,\uptau_A)\to (Y,\uptau')$ es continua\\
+\textbf{Continuidad local}\\
+\begin{definition}
+	Sean $(X,\uptau)$ un esp. top. y $x\in X$. Un subconjunto $U\subseteq X$ es \textcolor{blue}{vecindad de x } si $\exists V\in \uptau\ni x\in V\subset U$(x es interior de U)
+\end{definition}
+\begin{definition}
+	La coleccion de todas las vecindades de un punto $x\in X$ se llama \textcolor{blue}{sistema de vencindades de x}\\
+	\textcolor{red}{Notacion: } $N_x$
+\end{definition}
+\textbf{Propiedad: }
+Nx es cerrado bajo intersecciones y extensiones\\
+\textbf{Propiedad: }Sea A un subconjunto del esp. top. $(X,\uptau)\ni\forall x\in A\exists G\in\uptau\ni x\in G\subset A$. Entonces A es un abierto en $\uptau$\\
+\textbf{Propiedad: } Un conjunto G es abierto ssi G es vecindad de cada uno de sus puntos\\
+\begin{definition}
+	Un mapeo $f:X\to Y$ entre esp. top. es continuo en un punto $x\in X$ si para cada U $U\in N_f(x)\exists V\in N_x\ni f(V)\subset U$
+\end{definition}
+\begin{theorem}
+	 un mapeo $f:X\to Y$ entre espacios topológicos es continuo ssi es continuo en cada punto de X.
+\end{theorem}
+\begin{LARGE}
+\textbf{Homeomorfismo}
+\end{LARGE}
+\begin{definition}
+	Los espacios topológicos $(X,\uptau)$ y $(Y,\uptau ')$ son \textcolor{blue}{Homeomorfos} si existe una función $f:X\to Y\ni$(llamada homeomofismo)
+	\begin{enumerate}
+		\item f es biyectiva
+		\item f y f$^{-1}$ son continuas
+	\end{enumerate}
+\end{definition}
+\begin{theorem}
+	Sea $\{f_i:X\to(Y_i,\uptau_i)\}$ una colección de mapeos definidos sobre un conjunto no vacío X sobre los espacios topológicos $(Y_i,\uptau_i)$, sea 
+	\[S=\cup_i \{f^{-1}(H):H\in\uptau_i\}\]
+	y definimos $\uptau$ como la topología sobre X generada por S, entonces:
+	\begin{enumerate}
+	\item Todas las $f_i$ son continuas con respecto a $\uptau$
+	\item Si $\uptau^*$ es la intersección de todas las topologías sobre X con respecto a las cuales las $f_i$ son continuas, entonces $\uptau=\uptau^*$
+	\item $\uptau$ es la topología menos fina sobre X tales que las $f_i$ son continuas
+	\item S es una subbase para $\uptau$
+	\end{enumerate}
+\end{theorem}
+
+\begin{LARGE}
+	\textbf{Topología producto}
+\end{LARGE}
+\begin{definition}
+	Sea $X_{\alpha}$ in conjunto $\forall \alpha \in I$. El producto cartesiano de las $x_{\alpha}$ es el conjunto:
+	\[\prod_{a\in I} x_{\alpha}:=\{x:I\to\cup_{a\in I}X_{\alpha}\ni x(\alpha) \in X_{\alpha}\forall \alpha \in I\}\]
+\end{definition}
+\begin{definition}
+	Se define la k-esima proyección $\pi_k$ como el mapeo
+	\[\pi_k: \prod_{\alpha \in I}X_{\alpha}\to x_{\alpha}\]
+	\[\pi_k(w\to w_k)\]
+\end{definition}
+\begin{LARGE}
+	\textbf{Compactos}
+\end{LARGE}
+\begin{definition}
+	Sea $(X,\uptau)$
+\end{definition}
+
+
+
+
+
+
+
 
 
 
@@ -110,51 +233,73 @@ Una \textcolor{blue}{Propiedad topol'ogica} es una propiedad que si la tiene el 
 		\item $\beta\subset\uptau$ es una base para $\uptau$, ssi $\forall G\in \uptau,\ \forall p\in G \exists B_p\in\beta\ni p\in B_p\subset G$ 
 	\end{enumerate}
 \end{theorem}
+
 %teorema 2
+
 \begin{theorem}
-%teorema 3
 	 Sea $\beta$ una familia de subconjuntos de un conjunto no vacio X. Entonces $\beta$ es una clase para una topología $\uptau$ sobre X ssi se cumplen 
 	 \begin{enumerate}
 	 \item X=$\cup_{b\in\beta} B$
 	 \item $\forall B, B^*\in\beta$ se tiene que B$\cap B^*$ la unión de miembros de $\beta \Leftrightarrow$ si p$\in B\cap B^*\exists B_p\in\beta\ni p\in B_p\subset B\cap B^*$ 
 	 \end{enumerate}
 \end{theorem}
+
+%teorema 3
+
 \begin{theorem}
-%lema 1 
 	Sea X cualquier conjunto no vacío y sea S una clase arbitriaria de subconjuntos de X, Entonces S puede construirse en la subbase abierta para una topología sobre X en el sentido que las intersecciones finitas de los miembros de S producen una base para dicha topología.
 \end{theorem}
+
+%lema 1 
+
 \begin{lemma}
-%teorema 4
 Si S es subbase de las topologías $\uptau$ y $\uptau^*$  sobre X $\Rightarrow\uptau = \uptau^*$
 \end{lemma}
+
+%teorema 4
+
 \begin{theorem}
-%teorema 5 lindelof
 Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topología $\uptau$ sobre X, generado por S, y la intersección de todoas las topologías sobre X que contienen a S. 
 \end{theorem}
+
+%teorema 5 lindelof
+
 \begin{theorem}{\textbf{Lindelof}}
-%teorema 6
 	Sea X un espacio segundo contable si un abierto no-vacio G de X se puede representar como unión de una clase $\{G_1\}$ de abiertos de X $\Rightarrow$ G puede representarse como unión contable de los $G_i$
 \end{theorem}
+
+%teorema 6
+
 \begin{theorem}
-%teorema 7
-	Todo espacio m'etrico es de Hausdorff 
+	Todo espacio métrico es de Hausdorff 
 \end{theorem}
+
+%teorema 7
+
 \begin{theorem}
-%teorema 8
 	Si X es un espacio de Hausdorff, entonces cada sucesión de puntos ($X_n$) en X converga a lo más a un punto de X.
 \end{theorem}
+
+%teorema 8
+
 \begin{theorem}
-%teorema 9
 	Cada subconjunto finito A$\subset$X en un Hausdorff es cerrado
 \end{theorem}
+
+%teorema 9
+
 \begin{theorem}
-%teorema 10
 	Composición de mapeos continuos es un mapeo continuo
 \end{theorem}
+
+%teorema 10
+
 \begin{theorem}
-%teorema 11
 	 un mapeo $f:X\to Y$ entre espacios topológicos es continuo ssi es continuo en cada punto de X.
 \end{theorem}
+
+%teorema 11
+
 \begin{theorem}
 	Sea $\{f_i:X\to(Y_i,\uptau_i)\}$ una colección de mapeos definidos sobre un conjunto no vacío X sobre los espacios topológicos $(Y_i,\uptau_i)$, sea 
 	\[S=\cup_i \{f^{-1}(H):H\in\uptau_i\}\]
@@ -166,6 +311,8 @@ Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topolog
 	\item S es una subbase para $\uptau$
 	\end{enumerate}
 \end{theorem}
+
+
 \textbf{Compactos}
 %teorema 12
 \begin{theorem}
@@ -422,6 +569,7 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 \end{theorem}
 \begin{theorem}
 %teorema 56
+
 	Si X es compacto, el espacio Y es Hausdorff y $f:X\to Y$ es continua y sobreyectiva, $\Rightarrow \Phi_f:\bigslant{X}{G_f}\to Y$ es homeomorfismo
 \end{theorem}
 \begin{theorem}
