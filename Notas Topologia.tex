@@ -115,19 +115,19 @@ Sea X un subconjunto no vacio y sea S una clase de subconjuntos de X. La topolog
 	Sea X un espacio segundo contable si un abierto no-vacio G de X se puede representar como unión de una clase $\{G_1\}$ de abiertos de X $\Rightarrow$ G puede representarse como unión contable de los $G_i$
 \end{theorem}
 \begin{definition}{\textbf{Espacios de Hausdorff}}
-	Un espacio topológico X es de Hausdorff si dados $x,y\in X, x\neq y$, existen abiertos U,V de X $\ni x\in U,y\in V$ y $U\cap V = \emptyset$
+	Un espacio topológico X es de Hausdorff\label{Hausdorff} si dados $x,y\in X, x\neq y$, existen abiertos U,V de X $\ni x\in U,y\in V$ y $U\cap V = \emptyset$
 \end{definition}
 \begin{theorem}
-	Todo espacio métrico es de Hausdorff 
+	Todo espacio métrico es de Hausdorff(\ref{Hausdorff})
 \end{theorem}
 \begin{definition}{\textbf{Convergencia}}
 	Sea ($X_n$) una sucesión en un espacio topológico X, se dice que ($X_n$) convege a un punto y de X, si para cada vecindad U de y $\exists N\in \mathbf{Z}^+\ni$ si n$\geq N\Rightarrow x\in U$ En este caso y es limite de ($X_n$), y se denota $X_n\to y$
 \end{definition}	
 \begin{theorem}
-	Si X es un espacio de Hausdorff, entonces cada sucesión de puntos ($X_n$) en X converga a lo más a un punto de X.
+	Si X es un espacio de Hausdorff(\ref{Hausdorff}), entonces cada sucesión de puntos ($X_n$) en X converga a lo más a un punto de X.
 \end{theorem}
 \begin{theorem}
-	Cada subconjunto finito A$\subset$X en un Hausdorff es cerrado
+	Cada subconjunto finito A$\subset$X en un Hausdorff(\ref{Hausdorff}) es cerrado
 \end{theorem}
 
 
@@ -226,7 +226,7 @@ Nx es cerrado bajo intersecciones y extensiones\\
 En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados de X, $\{F_{i_1}\}\ni$ cada subclase finita tiene interseicción no vacia, entonces $\cap_iF_i\neq\emptyset$ 
 \end{theorem}
 \begin{definition}
-	Dada una clase de conjuntos $C=\{C_i\}$ se dice que C tiene la propiedad de intersecci'on finita(PIF) si para cada $c_{i_k},...,c_{i_k}$ se cumple $\bigcap\limits_{j=i} C_{ij}\neq \emptyset$
+	Dada una clase de conjuntos $C=\{C_i\}$ se dice que C tiene la propiedad de intersección finita(PIF) si para cada $c_{i_k},...,c_{i_k}$ se cumple $\bigcap\limits_{j=i} C_{ij}\neq \emptyset$
 \end{definition}
 \begin{theorem}
 	X es un espacio compacto ssi cada clase de cerrados de X que tiene la Pif tiene intersección no vacía
@@ -256,7 +256,7 @@ En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados d
 	Cada subespacio compacto de un $T_2$ es cerrado
 \end{theorem}
 \begin{theorem}
-	Un mapeo biyectivo y continuo de un espacio compacto en un espacio de Hausdorff es un homeomorfismo
+	Un mapeo biyectivo y continuo de un espacio compacto en un espacio de Hausdorff(\ref{Hausdorff}) es un homeomorfismo
 	
 	AGREGAR FIGURA
 \end{theorem}
@@ -310,7 +310,7 @@ Si X es $T_4\Rightarrow$ X es un $T_3$
 	Si X es un espacio @do contable, normal y $T_1$, entonces X es \textcolor{blue}{Metrizable}
 \end{theorem}
 \begin{definition}\textbf{Completamente regular}
-	X es completamente regular si dados F un cerrado de X y $p\in X\ni p\not\in F$, entonces $\exists$ una funci'on continua $f:X\to [0,1]\ni$
+	X es completamente regular si dados F un cerrado de X y $p\in X\ni p\not\in F$, entonces $\exists$ una función continua $f:X\to [0,1]\ni$
 	\[f(F)=\{0\}\ y \ f(p)= 1\]
 \end{definition}
 \begin{theorem}
@@ -334,7 +334,7 @@ Si X es $T_4\Rightarrow$ X es un $T_3$
 	\textbf{Redes}
 \end{LARGE}
 \begin{definition}
-	Sea D un conjunto y $\leq$ una relaci'on binaria definida sobre D que satisface las siguientes condiciones 
+	Sea D un conjunto y $\leq$ una relación binaria definida sobre D que satisface las siguientes condiciones 
 	\begin{enumerate}
 		\item $\leq$ es reflexiva. x$\leq$x $\forall x\in D$
 		\item $\leq$ es transitiva
@@ -350,16 +350,218 @@ Si X es $T_4\Rightarrow$ X es un $T_3$
 \begin{definition}
 	Si $(X,\uptau)$ es un esp. top. y $w:D\to X$ es una red, se dice que w \textcolor{blue}{converge a $x\in X$} si para cada abierto U que contiene a X¿existe $d\in D\ni T_d:\{w(e):d\leq e\in D\}\subset U$
 \end{definition}
-\textcolor{red}{Notaci'on: }$w\to x$
+\textcolor{red}{Notación: }$w\to x$
 \begin{theorem}
-	Sea $(Y_i,\uptau_i)$ un espacio topológico y sea $A\subseteq X$, entonces $x\in \overline{A}$ ssi existe una red w en A$\ni\ w\to x$
+	Sea $(X,\uptau)$ un espacio topológico y sea $A\subseteq X$, entonces $x\in \overline{A}$ ssi existe una red w en A$\ni\ w\to x$
 \end{theorem}
 \begin{LARGE}
 	\textbf{Subredes}
 \end{LARGE}
+\textbf{Nota: } Un subconjunto D' de un ocnjunto dirigido D es cofinal so $\forall d\in D\exists e \in D'\ni d\leq e$
 \begin{definition}
-	Sea 
+	Sea $w:D\to X$ y $v:\xi\to X$ redes sobre X donde $(D,\leq),(\xi,\succeq)$ son conjuntos dirigidos. Se dice que v es una subred de w si existe una función $h:\xi\to D\ni$
+	\begin{enumerate}
+		\item h es monotona i.e. $\alpha\succeq\beta\Rightarrow h(\alpha)\succeq h(\beta)$
+		\item h es cofinal
+		\item $v(\alpha)=w(h\alpha)\forall a \in \xi$
+	\end{enumerate}
 \end{definition}
+\begin{definition}
+	\textbf{Subsucesión } una subsucesión de ($X_n$) es una sucesión de la forma ($X_{n_k}$)
+\end{definition}
+\begin{LARGE}
+	\textbf{Filtros}
+\end{LARGE}
+\begin{definition}
+	Sea X un conjunto. Una colección $\mathcal{F}\subseteq \mathcal{P}(X)$ es un \textcolor{blue}{filtro sobre X} si se satisface:
+	\begin{enumerate}
+		\item $\emptyset\not\in \mathcal{F}$
+		\item Si $A\in \mathcal{F}$ y $A\subseteq B\Rightarrow B\in \mathcal{F}$
+		\item Si $A,B\in\mathcal{F}\Rightarrow A\cap B\in \mathcal{F}$
+	\end{enumerate}	 
+\end{definition}
+\textbf{Nota: }
+\begin{enumerate}
+	\item Cualquier colección $S\subseteq \mathcal{P}(X)$ con la PIF genera un filtro que la contiene
+	\item Sea F(x) la colección de todos los filtros sobre X. Sea $\leq$ la relacion de contención. Entonces $(F(X),\leq)$ es un conjunto parcialmente ordenado el cual no puede ser lineal
+\end{enumerate}
+\begin{theorem}
+	Sea $X\neq\emptyset$ y $\mathcal{F}_{\alpha}\in F(x),\ \alpha\in I$. Entonces $\cap_i\mathcal{F}_{\alpha}\in F(x)$
+\end{theorem}
+\begin{theorem}
+	Sea X un conjunto y U(x) ina colección de filtros sobre X. Si para cualquier $\mathcal{F}_1,\mathcal{F}_2\in U(x)$ se tiene que $\mathcal{F}_1\subset\mathcal{F}_2$ o $\mathcal{F}_2\subset\mathcal{F}_1\Rightarrow \cup U(x)$ es filtro
+\end{theorem}
+\begin{LARGE}
+	\textbf{Ultrafiltros}
+\end{LARGE}
+\begin{definition}
+	Sean ($X,\leq$) un conjunto parcialmente ordenado, $a\in X$ y $A\subset X$. Se dice que a es un \textcolor{blue}{elemento maximal} de A, si $a\in A$ y si $a\leq b\forall b\in A\Rightarrow a=b$
+\end{definition}
+\begin{definition}
+	Sean ($X,\leq$) un conjunto parcialmente ordenado y $C\subset X$. Se dice que C es \textcolor{blue}{cadena} en X, si $\forall a,b\in C$ se cumple $a\leq b$ o $b\leq a$
+\end{definition}
+\begin{lemma}{Zorn}
+	So X es un conjunto no vacio y parcialmente ordenado $\ni$ cada cadena en X tiene cota superior, entonces X tiene un elemento maximal
+\end{lemma}
+\begin{definition}
+	Sea $X\neq \emptyset$ una familia $U\subset\mathcal{P}(X)$ es un \textcolor{blue}{ultrafiltro} si se cumple
+	\begin{enumerate}
+		\item U es filtro
+		\item Si $\mathcal{F}$ es un filtro sobre X$\ni U\subseteq\mathcal{F}\Rightarrow U=\mathcal{F}$(U es maximal)
+	\end{enumerate}
+\end{definition}
+\begin{theorem}{\textbf{Tarski}}
+	Sea X un conjunto y $\mathcal{F}$ un filtro sobre X. Entonces existe un ultrafiltro U sobre x $\ni \mathcal{F}\subset U$
+\end{theorem}
+\begin{theorem}
+	Sea X un conjunto y U un filtro sobre X. Entonces los enunciados soguietnes son equivalentes:
+	\begin{enumerate}
+		\item U es ultrafiltro
+		\item Par acualquier $E\subset U\ni E\cap F\neq \emptyset,\ \forall F\in U$ se tiene que $E\in U$
+		\item Si $E\subset X\Rightarrow E\in U$ o $X-E\in U$
+		\item Si $A, B\in$ X y $ A\cap B\in U\Rightarrow A\in U$ o $ B\in U$
+	\end{enumerate}
+\end{theorem}
+\begin{definition}
+	Una subcolección $\beta\subset\mathcal{F}$ es una \textcolor{blue}{base del filtro $\mathcal{F}$} si $\forall F\in \mathcal{F} \exists B \in \beta\ni B\subset F$
+\end{definition}
+\begin{theorem}
+	Una familia $\beta$ de subconjuntos no vacios de X es base de algún filtro sobre X ssi $\forall B_1,B_2 \in \beta\exists B_3\in\beta\ni B_3\subset B_1\cap B_2$
+\end{theorem}
+\begin{theorem}
+	Sean X un espacio topológico y $\mathcal{F}$ un filtro sobre X. Entonces a familia $\beta=\{\overline{F}\ni F\in \mathcal{F}\}$ es una base de filtros
+\end{theorem}
+\textbf{Nota: } Al filtro generado por $\beta$ se le llama $\overline{\mathcal{F}}$
+\begin{theorem}
+	Sean X, Y espacios topológicos, $\overline{\mathcal{F}}$ un filtro sobre X y un mapeo $f:X\to Y$. Entonces $\beta_{f(\overline{\mathcal{F}})}=\{f(F):F\in \mathcal{F}\}$
+\end{theorem}
+\begin{theorem}
+	Sean X, Y espacios topológicos, $\mathcal{F}$ un filtro sobre Y y un mapeo $f:X\to Y$. Si $\forall F\in \mathcal{F}$ se tiene que $f^{-1}(F)\neq\emptyset$, entonces $\beta=\{f^{-1}(F):F\in \mathcal{F}\}$
+\end{theorem}
+\begin{theorem}
+	Sea $X\neq\emptyset$, $\mathcal{F}$ un filtro sobre X y $E\subset X$. Si $B=\{F\cap E: F\in \mathcal{F}\}$ 
+y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces 
+	\begin{enumerate}
+		\item Si $F\cap E\neq \emptyset, \forall F\in \mathcal{F}\Rightarrow \beta$ es base de filtro sobre X
+		\item Si$\exists F\in \mathcal{F}\ni F\cap E = \emptyset \Rightarrow$ B' es base de filtro sobre X 
+	\end{enumerate}
+\end{theorem}
+\begin{definition}
+	Sean ($(X,\uptau)$) un esp. top., $\mathcal{F}$ un filtro sobre X, $x\in X$ entonces:
+	\begin{enumerate}
+		\item Se dice que $\mathcal{F}$ converge a x, $\mathcal{F}\to x$ si $\forall V\in N(x)\exists F\in \mathcal{F}\ni F\subset V$\textcolor{red}{IMPORTANTE}
+		\item se dice que x es un punto de acumulación de $\mathcal{F}$ si $\forall F\in \mathcal{F}$ y $\forall V\in N(x)$ se cumple que $F\cap V\neq \emptyset$\\
+		\textcolor{red}{Notación: } $\mathcal{F}>x$
+	\end{enumerate}
+\end{definition}
+\begin{theorem}[Teorema 32]
+	Sea X un conjunto y U un filtro sobre X. Entonces los enunciados siguietnes son equivalentes:
+	\begin{enumerate}
+		\item U es ultrafiltro
+		\item Par acualquier $E\subset U\ni E\cap F\neq \emptyset,\ \forall F\in U$ se tiene que $E\in U$
+		\item Si $E\subset X\Rightarrow E\in U$ o $X-E\in U$
+		\item Si $A, B\in$ X y $ A\cap B\in U\Rightarrow A\in U$ o $ B\in U$
+	\end{enumerate}
+\end{theorem}
+\begin{definition}
+	Sea $(X,\uptau)$ un esp. top. $\mathcal{F}$ es filtro sobre X y $x\in X$. Entonces $F\to x$ si $\forall V\in N(x)\exists F\in\mathcal{F}\ni F\subset V$
+\end{definition}
+\begin{theorem}
+	Sean $(X,\uptau)$ un espacio topológico, $\mathcal{F}$ es filtro sobre X y $x\in$X. Entonces $F\to x$ s $\forall V\in N(x)\exists F\in\mathcal{F}\ni F\subset V$
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio topológico. $x\in X$ y $\mathcal{F}$ un filtro sobre $X\ni F\to x$. Si G es un filtro sobre $X\ni F\subset G\Rightarrow G\to x$
+\end{theorem}
+\begin{definition}
+	Se dice que una base de filtro $\beta$ converge a un punto $x\in X$ si $\forall V\in N(x)\exists B\in\beta\ni B\subset V$
+	\textbf{Notación: } $\beta\to x$
+\end{definition}
+\begin{theorem}
+	Sean X un espacio topológico, $\mathcal{F}$ un filtro sobre X, $\beta$ una base de filtro para $\mathcal{F}$ y $x\in X$. Entonces $\mathcal{F}\to x$ ssi $\beta \to x$
+\end{theorem}
+\textbf{Propiedad: }
+Sean X un esp. top. $x\in X$ y $\mathcal{F}$ un filtro sobre X$\ni \mathcal{F}\to x$. Si G es un filtro sobre x $\ni \mathcal{F}\subset G\Rightarrow G\to x$
+\begin{theorem}
+	Sean X un espacio topológico, $x\in X$ y $\mathcal{F}$ un filtro sobre X. Los enunciados siguientes son equivalentes:
+	\begin{enumerate}
+		\item xes un punto de acumulación de $\mathcal{F}$ i.e. $\mathcal{F} \succ x$
+		\item Existe un filtro G en x $\ni\mathcal{F}\subset G$ y $G\to x$
+		\item $x\in \overline{F}, \forall F \in \mathcal{F}$. Es decir, $x\in \cap_{F\in\mathcal{F}}\overline{F}$ 
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio topológico, U un ultrafiltro sobre x y $x\in X$ entonces $U \succ x$ ssi $U\to x$
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio topológico $x\in X$ y $A\subset X$. Entonces, $x\in\overline{A}$ ssi existe un filtro $\mathcal{F}$ sobre X $\ni F\to x$ y $A\in\mathcal{F}$
+\end{theorem}
+\begin{theorem}
+	Sean X,Y espacios topológicos, $x\in X$  y $f:X\to Y$ una función. Entonces f es continua en x ssi la base de filtros $B_{f(N(x))}=\{f(V):V\in N(x)\}$ converge a f(x)
+\end{theorem}
+\textbf{Propiedad: }
+Sea $(X,\uptau)$ un esp. top., entonces X es Hausdorff(\ref{Hausdorff}) ssi todo filtro convergente en X converge a un punto único
+\textbf{Propiedad: } 
+Sea $(X,\uptau)$ un esp. top. entocnes X es Hausdorff(\ref{Hausdorff}) ssi todo filtro convergente en X converge a un punto único.
+\begin{theorem}
+	Sea $I\neq\emptyset$ y $\{X_i,\uptau_i\}\ni i\in I$ una colección de espacios topológicos. Sean $(\prod_{i\in I}x_i,\uptau_p)$ el espacio producto y $\mathcal{F}$ un filtro sobre $\prod_{i\in I}x_i$. Entonces $\mathcal{F}\to x$ ssi $\prod_{i}(\mathcal{F})\to \prod_i(x)$ en $(X_i,\uptau_i) \forall i\in I$
+\end{theorem}
+\begin{theorem}
+	Sea X un espacio topológico. Los enunciados siguientes son equivalentes:
+	\begin{enumerate}
+		\item X es compacto
+		\item Toda colección \textbf{A} de conjuntos cerrados no vacios con la PIF, cumple que $\cap A\neq\emptyset$
+		\item Para todo filtro $\mathcal{F}$ sobre X $\exists x\in X\ni \mathcal{F} \succ x$
+		\item Todo ultrafiltro sobre X converge
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}\textbf{Tikonov}
+	Sea $I\neq\emptyset$ y $\{X_i,\uptau_i\}\ni i\in I$ una colección de espacios topológicos. Entonces $(\prod_{i\in I}x_i,\uptau_p)$ es compacto ssi $x_i$ es compacto $\forall i \in I$
+\end{theorem}
+\begin{lemma}
+	Sean X y Y espacios topológicos, $f:X\to Y$ un mapeo y U un ultrafiltro sobre X. Entonces F(U) *Filtro generado por $\beta = \{f(F):F\in U\}$* es un ultrafiltro sobre Y
+\end{lemma}
+\begin{definition}
+	Sea $(Y_{\alpha},\uptau_{\alpha})$ una familia de esp. top. y sea F={$f_{\alpha}: X\to (Y_{\alpha},\uptau_{\alpha}): \alpha\in I$} una familia de mapeos. La \textcolor{blue}{topología inducida} por F sobre X es la topología menos fina o mas debil que hace a las $f_{\alpha)}$ continuas\\
+\textbf{Notación: } $\uptau_F$
+\end{definition}
+\includegraphics[scale=.25]{../../../../../../../../Downloads/WhatsApp Image 2023-06-01 at 12.24.47 PM.jpeg} \\
+
+\begin{LARGE}
+	\textbf{Topología Cociente}
+\end{LARGE}
+\begin{definition}
+	Sea $\{(X_{\alpha},\uptau_{\alpha})\}$ una colección de esp. top. Sea Y un conjunto y F=\{$f_{\alpha}:(Y_{\alpha}\to Y$\} una familia de mapeos. La topología mas fuerte que hace a los $f_{\alpha}$ continuas se llama \textcolor{blue}{Topología co-inducida por F}\label{Topologia coinducida}
+\end{definition}
+\textbf{Nota: } Sea $(X,\uptau)$ un esp. top. Sea Y un conjunto y $f:(X,\uptau)\to Y$ un mapeo. La topología co-inducida por f sobre Y se llama \textcolor{blue}{topología cociente sobre Y}\label{Top. cociente}
+\begin{definition}
+	Sean X un esp. top. y Y un conjunto $\ni g:X\to Y$ es un mapeo sobreyectivo, entonces $\uptau_y=\{G\subset Y\ni g^{-1}(G)$ es un abierto de X$\}$ es la topología cociente inducida por g para Y.
+\end{definition}
+\begin{theorem}
+	Si X y Y son espacios topológicos y $f:X\to Y$ es un mapeo continuo sobre yectivo y abierto o cerrado, la topología $\uptau$ de Y es la topología Cociente $\uptau_f$
+\end{theorem}
+\begin{theorem}
+	Sea Y un espacio topológico dotado de la topologia cociente, inducida por el mapeo $f:X\to Y$. Entonces un mapeo arbitrario $g:Y\to Z$ es continuo ssi $g\circ f:X\to Z$ es continuo\\
+\includegraphics[scale=0.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.jpeg} 
+\end{theorem}
+\textbf{Nota: }\\
+\begin{enumerate}
+	\item Sea G la partición deu n esp. top. X y sea $\bigslant{X}{G}$ su conjunto cociente o descomposición
+	\item La función $p: X\to \bigslant{X}{G}\ni p(x)=[x]$ se llama la función cociente o función canónica 
+	\item $\mathcal{U}=\{U\subset\bigslant{X}{G}\ni p^{-1}(U)$ es abierta de X $\}$
+\end{enumerate}
+\begin{theorem}
+\hfill
+	\begin{enumerate}
+		\item U es una topología para $\bigslant{X}{G}$
+		\item Si $\bigslant{X}{G}$ tiene la topología cociente, entonces p es continua. *$p:X\to\bigslant{X}{G}\ni p(x)=[x]$*
+		\item Si V es una topología para $\bigslant{X}{G}\ni$ p es continua, entoncres $V\subset U$
+		\item Si $\bigslant{X}{G}$ tiene la topología cociente y su $A\subset \bigslant{X}{G}\ni p^{-1}(A)$ es cerrado de X $\Rightarrow$ A es cerrado en $\bigslant{X}{G}$
+	\end{enumerate}
+\end{theorem}
+\textbf{Nota: }
+Sean X y Y esp. top. y $f:X\to Y$ un mapeo continuo y sobreyectivo. Definamos
+\[G_f=\{f^{-1}(y):y\in Y\}\]
+Entonces $G_f$ es una partición de X 
 
 
 
@@ -378,9 +580,6 @@ Si X es $T_4\Rightarrow$ X es un $T_3$
 
 
 
-\textbf{Nota: } Recordar: X es $T_1$ ssi $\forall x,y\in X,\ x\neq y\exists$ abiertos U y V $\ni$
-	\[x\in U \ y \ x\not\in V\]
-	\[y\not\in U \ y \ y\in V\]
 
 
 
@@ -605,29 +804,40 @@ En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados d
 	Un espacio topológico es $T_2$ ssi cada sucesión convergente tiene límite único
 \end{theorem}
 \textbf{Redes}
+
 %teorema 29
+
 \begin{theorem}
 	Sea $(Y_i,\uptau_i)$ un espacio topológico y sea $A\subseteq X$, entonces $x\in \overline{A}$ ssi existe una red w en A$\ni\ w\to x$
 \end{theorem}
 \textbf{Filtros}
-%teorema 30
-\begin{theorem}
 
-%teorema 31
+%teorema 30
+
+\begin{theorem}
 	Sea $X\neq\emptyset$ y $\mathcal{F}_{\alpha}\in F(x),\ \alpha\in I$. Entonces $\cap_i\mathcal{F}_{\alpha}\in F(x)$
 \end{theorem}
+
+%teorema 31
+
 \begin{theorem}
-%lema 3
 	Sea X un conjunto y U(x) ina colección de filtros sobre X. Si para cualquier $\mathcal{F}_1,\mathcal{F}_2\in U(x)$ se tiene que $\mathcal{F}_1\subset\mathcal{F}_2$ o $\mathcal{F}_2\subset\mathcal{F}_1\Rightarrow \cup U(x)$ es filtro
 \end{theorem}
+
+%lema 3
+
 \begin{lemma}{Zorn}
-%teorema 32
 	So X es un conjunto no vacio y parcialmente ordenado $\ni$ cada cadena en X tiene cota superior, entonces X tiene un elemento maximal
 \end{lemma}
+
+%teorema 32
+
 \begin{theorem}{\textbf{Tarski}}
-%teorema 33
 	Sea X un conjunto y $\mathcal{F}$ un filtro sobre X. Entonces existe un ultrafiltro U sobre x $\ni \mathcal{F}\subset U$
 \end{theorem}
+
+%teorema 33
+
 \begin{theorem}
 	Sea X un conjunto y U un filtro sobre X. Entonces los enunciados soguietnes son equivalentes:
 	\begin{enumerate}
@@ -637,25 +847,34 @@ En el teorema anterior, la contrapuesta de (2) es: Para toda clase de cerrados d
 		\item Si $A, B\in$ X y $ A\cap B\in U\Rightarrow A\in U$ o $ B\in U$
 	\end{enumerate}
 \end{theorem}
+
 %teorema 34
+
 \begin{theorem}
 	Una familia $\beta$ de subconjuntos no vacios de X es base de algún filtro sobre X ssi $\forall B_1,B_2 \in \beta\exists B_3\in\beta\ni B_3\subset B_1\cap B_2$
 \end{theorem}
+
 %teorema 35
+
 \begin{theorem}
-%teorema 36
 	Sean X un espacio topológico y $\mathcal{F}$ un filtro sobre X. Entonces a familia $\beta=\{\overline{F}\ni F\in \mathcal{F}\}$ es una base de filtros
 \end{theorem}
+
+%teorema 36
+
 \begin{theorem}
-%teorema 37
 	Sean X, Y espacios topológicos, $\overline{\mathcal{F}}$ un filtro sobre X y un mapeo $f:X\to Y$. Entonces $\beta_{f(\overline{\mathcal{F}})}=\{f(F):F\in \mathcal{F}\}$
 \end{theorem}
+
+%teorema 37
+
 \begin{theorem}
-%teorema 38
 	Sean X, Y espacios topológicos, $\mathcal{F}$ un filtro sobre Y y un mapeo $f:X\to Y$. Si $\forall F\in \mathcal{F}$ se tiene que $f^{-1}(F)\neq\emptyset$, entonces $\beta=\{f^{-1}(F):F\in \mathcal{F}\}$
 \end{theorem}
+
+%teorema 38
+
 \begin{theorem}
-%teorema 39
 	Sea $X\neq\emptyset$, $\mathcal{F}$ un filtro sobre X y $E\subset X$. Si $B=\{F\cap E: F\in \mathcal{F}\}$ 
 y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces 
 	\begin{enumerate}
@@ -663,8 +882,10 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 		\item Si$\exists F\in \mathcal{F}\ni F\cap E = \emptyset \Rightarrow$ B' es base de filtro sobre X 
 	\end{enumerate}
 \end{theorem}
+
+%teorema 39
+
 \begin{theorem}[Teorema 32]
-%teorema 40
 	Sea X un conjunto y U un filtro sobre X. Entonces los enunciados siguietnes son equivalentes:
 	\begin{enumerate}
 		\item U es ultrafiltro
@@ -673,21 +894,29 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 		\item Si $A, B\in$ X y $ A\cap B\in U\Rightarrow A\in U$ o $ B\in U$
 	\end{enumerate}
 \end{theorem}
+
+%teorema 40
+
 \begin{theorem}
-%teorema 41
 	Sean $(X,\uptau)$ un espacio topológico, $\mathcal{F}$ es filtro sobre X y $x\in$X. Entonces $F\to x$ s $\forall V\in N(x)\exists F\in\mathcal{F}\ni F\subset V$
 \end{theorem}
+
+%teorema 41
+
 \begin{theorem}
-%teorema 42
 	Sea X un espacio topológico. $x\in X$ y $\mathcal{F}$ un filtro sobre $X\ni F\to x$. Si G es un filtro sobre $X\ni F\subset G\Rightarrow G\to x$
 	\textbf{Notación: } $\mathcal{F} \succ x$
 \end{theorem}
+
+%teorema 42
+
 \begin{theorem}
-%teorema 43
 	Sean X un espacio topológico, $\mathcal{F}$ un filtro sobre X, $\beta$ una base de filtro para $\mathcal{F}$ y $x\in X$. Entonces $\mathcal{F}\to x$ ssi $\beta \to x$
 \end{theorem}
+
+%teorema 43
+
 \begin{theorem}
-%teorema 44
 	Sean X un espacio topológico, $x\in X$ y $\mathcal{F}$ un filtro sobre X. Los enunciados siguientes son equivalentes:
 	\begin{enumerate}
 		\item xes un punto de acumulación de $\mathcal{F}$ i.e. $\mathcal{F} \succ x$
@@ -695,24 +924,34 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 		\item $x\in \overline{F}, \forall F \in \mathcal{F}$. Es decir, $x\in \cap_{F\in\mathcal{F}}\overline{F}$ 
 	\end{enumerate}
 \end{theorem}
+
+%teorema 44
+
 \begin{theorem}
-%teorema 45
 	Sea X un espacio topológico, U un ultrafiltro sobre x y $x\in X$ entonces $U \succ x$ ssi $U\to x$
 \end{theorem}
+
+%teorema 45
+
 \begin{theorem}
-%teorema 46
 	Sea X un espacio topológico $x\in X$ y $A\subset X$. Entonces, $x\in\overline{A}$ ssi existe un filtro $\mathcal{F}$ sobre X $\ni F\to x$ y $A\in\mathcal{F}$
 \end{theorem}
+
+%teorema 46
+
 \begin{theorem}
-%teorema 47
 	Sean X,Y espacios topológicos, $x\in X$  y $f:X\to Y$ una función. Entonces f es continua en x ssi la base de filtros $B_{f(N(x))}=\{f(V):V\in N(x)\}$ converge a f(x)
 \end{theorem}
+
+%teorema 47
+
 \begin{theorem}
-%teorema 48
 	Sea $I\neq\emptyset$ y $\{X_i,\uptau_i\}\ni i\in I$ una colección de espacios topológicos. Sean $(\prod_{i\in I}x_i,\uptau_p)$ el espacio producto y $\mathcal{F}$ un filtro sobre $\prod_{i\in I}x_i$. Entonces $\mathcal{F}\to x$ ssi $\prod_{i}(\mathcal{F})\to \prod_i(x)$ en $(X_i,\uptau_i) \forall i\in I$
 \end{theorem}
+
+%teorema 48
+
 \begin{theorem}
-%teorema 49
 	Sea X un espacio topológico. Los enunciados siguientes son equivalentes:
 	\begin{enumerate}
 		\item X es compacto
@@ -721,25 +960,35 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 		\item Todo ultrafiltro sobre X converge
 	\end{enumerate}
 \end{theorem}
+
+%teorema 49
+
 \begin{theorem}\textbf{Tikonov}
-%lema 4
 	Sea $I\neq\emptyset$ y $\{X_i,\uptau_i\}\ni i\in I$ una colección de espacios topológicos. Entonces $(\prod_{i\in I}x_i,\uptau_p)$ es compacto ssi $x_i$ es compacto $\forall i \in I$
 \end{theorem}
+
+%lema 4
+
 \begin{lemma}
-%teorema 50
 	Sean X y Y espacios topológicos, $f:X\to Y$ un mapeo y U un ultrafiltro sobre X. Entonces F(U) *Filtro generado por $\beta = \{f(F):F\in U\}$* es un ultrafiltro sobre Y
 \end{lemma}
+
+%teorema 50
+
 \begin{theorem}
-%teorema 51
 	Si X y Y son espacios topológicos y $f:X\to Y$ es un mapeo continuo sobre yectivo y abierto o cerrado, la topología $\uptau$ de Y es la topología Cociente $\uptau_f$
 \end{theorem}
+
+%teorema 51
+
 \begin{theorem}
-%teorema 52
 	Sea Y un espacio topológico dotado de la topologia cociente, inducida por el mapeo $f:X\to Y$. Entonces un mapeo arbitrario $g:Y\to Z$ es continuo ssi $g\circ f:X\to Z$ es continuo\\
 \includegraphics[scale=0.1]{../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.jpeg} 
 \end{theorem}
-\begin{theorem}
 
+%teorema 52
+
+\begin{theorem}
 	\begin{enumerate}
 		\item U es una topología para $\bigslant{X}{G}$
 		\item Si $\bigslant{X}{G}$ tiene la topología cociente, entonces p es continua. *$p:X\to\bigslant{X}{G}\ni p(x)=[x]$*
@@ -747,6 +996,8 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 		\item Si $\bigslant{X}{G}$ tiene la topología cociente y su $A\subset \bigslant{X}{G}\ni p^{-1}(A)$ es cerrado de X $\Rightarrow$ A es cerrado en $\bigslant{X}{G}$
 	\end{enumerate}
 \end{theorem}
+
+
 \textbf{Clase virtual 26-05-23}
 %lema 5
 \begin{lemma}
