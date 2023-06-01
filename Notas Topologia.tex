@@ -52,10 +52,11 @@ Un \textcolor{blue}{Espacio Metrizable} es un espacio topológico X con la propi
 Si $\uptau_1$ y $\uptau_2$ son topologías sobre X, entonces $\uptau_1\cap\uptau_2$ es topología sobre X
 \begin{definition}
 	Sea A un subconjunto no vacio del espacio topológico $(X, \uptau)$. Considere la clase 
-	\[\uptau_A=\{A\cap G: G\in\uptau es abierto de X\}\]
+	\[\uptau_A=\{A\cap G: G\in\uptau \textit{ es abierto de X}\}\]
 	a $\uptau_A$ se le llama \textcolor{blue}{topología relativa} sobre A
 \end{definition}
 \begin{definition}
+\hfill
 	\begin{enumerate}
 		\item Sean X y Y espacios topológicos y f un mapeo entre X y Y. Se dice que f es continua si $f^{-1}(G)$ es un abierto de X para cada abierto G de Y
 		\item Se dice que el mapeo es abierto si para cada abierto G de X se cumple que f(G) es abierto de Y
@@ -69,13 +70,14 @@ Una \textcolor{blue}{Propiedad topológica} es una propiedad que si la tiene el 
 \textbf{VER DEFINICIONES DEL 18/01/23}\\
 
 \begin{definition}
+\hfill
 	\begin{enumerate}
 		\item un punto p de X es interior de $A\subseteq X$ si existe un abierto G $\ni p\in G\subset A$
 		\item El interior de A denotado como int(A) o $A^{\circ}$ es el conjunto de todos los puntos interiores de A
 	\end{enumerate}
 \end{definition}
 \begin{definition}
-	Un punto forntera de $A\subset X$ es un punto tal que cada vecindad del punto intersecta a A y a $A^c$
+	Un punto frontera de $A\subset X$ es un punto tal que cada vecindad del punto intersecta a A y a $A^c$
 \end{definition}
 \begin{definition}
 	Una base abierta para el espacio topologico $(X,\uptau)$ es una clase de abiertos de X talque cada abierto en $\uptau$ puede escribirse como uniones de miembros de la clase
@@ -369,6 +371,7 @@ Si X es $T_4\Rightarrow$ X es un $T_3$
 \begin{definition}
 	\textbf{Subsucesión } una subsucesión de ($X_n$) es una sucesión de la forma ($X_{n_k}$)
 \end{definition}
+\newpage`
 \begin{LARGE}
 	\textbf{Filtros}
 \end{LARGE}
@@ -498,8 +501,6 @@ Sean X un esp. top. $x\in X$ y $\mathcal{F}$ un filtro sobre X$\ni \mathcal{F}\t
 \begin{theorem}
 	Sean X,Y espacios topológicos, $x\in X$  y $f:X\to Y$ una función. Entonces f es continua en x ssi la base de filtros $B_{f(N(x))}=\{f(V):V\in N(x)\}$ converge a f(x)
 \end{theorem}
-\textbf{Propiedad: }
-Sea $(X,\uptau)$ un esp. top., entonces X es Hausdorff(\ref{Hausdorff}) ssi todo filtro convergente en X converge a un punto único
 \textbf{Propiedad: } 
 Sea $(X,\uptau)$ un esp. top. entocnes X es Hausdorff(\ref{Hausdorff}) ssi todo filtro convergente en X converge a un punto único.
 \begin{theorem}
@@ -537,7 +538,7 @@ Sea $(X,\uptau)$ un esp. top. entocnes X es Hausdorff(\ref{Hausdorff}) ssi todo 
 	Sean X un esp. top. y Y un conjunto $\ni g:X\to Y$ es un mapeo sobreyectivo, entonces $\uptau_y=\{G\subset Y\ni g^{-1}(G)$ es un abierto de X$\}$ es la topología cociente inducida por g para Y.
 \end{definition}
 \begin{theorem}
-	Si X y Y son espacios topológicos y $f:X\to Y$ es un mapeo continuo sobre yectivo y abierto o cerrado, la topología $\uptau$ de Y es la topología Cociente $\uptau_f$
+	Si X y Y son espacios topológicos y $f:X\to Y$ es un mapeo continuo sobreyectivo y abierto o cerrado, la topología $\uptau$ de Y es la topología Cociente $\uptau_f$
 \end{theorem}
 \begin{theorem}
 	Sea Y un espacio topológico dotado de la topologia cociente, inducida por el mapeo $f:X\to Y$. Entonces un mapeo arbitrario $g:Y\to Z$ es continuo ssi $g\circ f:X\to Z$ es continuo\\
@@ -562,11 +563,35 @@ Sea $(X,\uptau)$ un esp. top. entocnes X es Hausdorff(\ref{Hausdorff}) ssi todo 
 Sean X y Y esp. top. y $f:X\to Y$ un mapeo continuo y sobreyectivo. Definamos
 \[G_f=\{f^{-1}(y):y\in Y\}\]
 Entonces $G_f$ es una partición de X 
-
-
-
-
-
+\textbf{Nota: } En la función $p:X\to\bigslant{X}{G_f}$ se tiene que $\forall x\in X$, p(x)=[x]=$f^{-1}(f(x))$
+\begin{definition}
+	Sea $f:X\to Y$ un mapeo continuo y sobreyectivo\\
+	Se define: 
+	\[\Phi_f:\bigslant{X}{G_f}\to Y\ni\]
+	\[\Phi_f([x]):=f(x)\]
+	es decir\\
+	\begin{center}
+\includegraphics[scale=1]{../../../../../../../../Downloads/mapeo cociente.png}
+	\end{center}	
+\textbf{Propiedad: } $\Phi_f$ es biyectiva(se cumple: $\Phi_f([x])=f(x)$)
+\end{definition}
+\begin{lemma}
+	$\forall A\subset Y$, $\Phi^{-1}_f(A)=p(f^{-1}(A))$
+\end{lemma}
+\begin{lemma}
+	$\forall B\subset\bigslant{X}{G_f}$, $\Phi_f(B)=f(p^{-1}(B))$
+\end{lemma}
+\begin{theorem}
+	Sean $f:X\to Y$ continua y sobreyectiva y  $\bigslant{X}{G_f}$ dotado de la topología cociente. Entonces $\Phi_f:\bigslant{X}{G_f}\to Y$ es continua
+\end{theorem}
+\begin{theorem}
+	Suponga que $f:X\to Y$ es continua y sobreyectiva. Si f es abierta o cerrada, entonces 
+	\[ \bigslant{\Phi}{G_f}\to Y\]
+	es un homeomorfismo
+\end{theorem}
+\begin{theorem}
+	Si X es compacto, el espacio Y es Hausdorff y $f:X\to Y$ es continua y sobreyectiva, $\Rightarrow \Phi_f:\bigslant{X}{G_f}\to Y$ es homeomorfismo
+\end{theorem}
 
 
 
@@ -999,30 +1024,41 @@ y $B^{'}=\{F\cap (X-E): F\in \mathcal{F}\}$ entonces
 
 
 \textbf{Clase virtual 26-05-23}
+
 %lema 5
+
 \begin{lemma}
 	$\forall A\subset Y$, $\Phi_f^{-1}(A)=p(f^{-1}(A))$
 \end{lemma}
+
 %lema 6
+
 \begin{lemma}
 	$\forall B\subset \bigslant{X}{G_f}$, $\Phi_f(B)=f(p^{-1}(B))$
 \end{lemma}
+
 %teorema 53
+
 \begin{theorem}
 	Sean $f:X\to Y$ continua y sobreyectiva y  $\bigslant{X}{G_f}$ dotado de la topología cociente. Entonces $\Phi_f:\bigslant{X}{G_f}\to Y$ es continua
 \end{theorem}
+
 %teorema 54
+
 \begin{theorem}
-%teorema 55
 	Suponga que $f:X\to Y$ es continua y sobreyectiva. Si f es abierta o cerrada, entonces 
 	\[ \bigslant{\Phi}{G_f}\to Y\]
 	es un homeomorfismo
 \end{theorem}
-\begin{theorem}
-%teorema 56
 
+%teorema 55
+
+\begin{theorem}
 	Si X es compacto, el espacio Y es Hausdorff y $f:X\to Y$ es continua y sobreyectiva, $\Rightarrow \Phi_f:\bigslant{X}{G_f}\to Y$ es homeomorfismo
 \end{theorem}
+
+%teorema 56
+
 \begin{theorem}
 	Los enunciados siguientes son equivalentes:
 	\begin{enumerate}

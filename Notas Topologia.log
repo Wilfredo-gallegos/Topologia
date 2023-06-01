@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  1 JUN 2023 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.15)  1 JUN 2023 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,57 +517,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--50
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 [1
 
 {C:/Users/ThinkPad T470/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 145--150
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
 
  []
 
 [2]
 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.jpeg
-, id=69, 3806.22pt x 1035.87pt>
+, id=72, 3806.22pt x 1035.87pt>
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM
 .jpeg Graphic file (type jpg)
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
 jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-05-30 at 5.18.30 PM.jpeg  used on input line 218.
+05-30 at 5.18.30 PM.jpeg  used on input line 220.
 (pdftex.def)             Requested size: 380.6443pt x 103.59306pt.
  [3 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
 jpeg>] [4] [5] [6]
 <../../../../../../../../Downloads/WhatsApp Image 2023-06-01 at 12.24.47 PM.jpe
-g, id=182, 1298.8525pt x 883.3pt>
+g, id=177, 1298.8525pt x 883.3pt>
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-06-01 at 12.24.47 P
 M.jpeg Graphic file (type jpg)
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-06-01 at 12.24.47 PM
 .jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-06-01 at 12.24.47 PM.jpeg  used on input line 527.
+06-01 at 12.24.47 PM.jpeg  used on input line 528.
 (pdftex.def)             Requested size: 324.71233pt x 220.82446pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--528
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
 
 [7]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-33.
+34.
 
 (C:\Users\ThinkPad T470\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 533.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 534.
 <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.jpeg
 , id=212, 3862.43pt x 883.3pt>
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM
@@ -575,22 +575,35 @@ File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.
 jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-05-30 at 8.17.33 PM.jpeg  used on input line 544.
+05-30 at 8.17.33 PM.jpeg  used on input line 545.
 (pdftex.def)             Requested size: 386.26563pt x 88.33517pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
 
 [8 <../../../../../../../../Downloads/WhatsApp Image 2023-06-01 at 12.24.47 PM.
 jpeg> <../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 P
-M.jpeg>] [9]
+M.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 571--573
+
+ []
+
+<../../../../../../../../Downloads/mapeo cociente.png, id=227, 145.29282pt x 80
+.55093pt>
+File: ../../../../../../../../Downloads/mapeo cociente.png Graphic file (type p
+ng)
+<use ../../../../../../../../Downloads/mapeo cociente.png>
+Package pdftex.def Info: ../../../../../../../../Downloads/mapeo cociente.png  
+used on input line 574.
+(pdftex.def)             Requested size: 145.29245pt x 80.55074pt.
+[9 <../../../../../../../../Downloads/mapeo cociente.png>]
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM
 .jpeg Graphic file (type jpg)
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 5.18.30 PM.
 jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-05-30 at 5.18.30 PM.jpeg  used on input line 688.
+05-30 at 5.18.30 PM.jpeg  used on input line 713.
 (pdftex.def)             Requested size: 380.6443pt x 103.59306pt.
  [10] [11] [12]
 File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM
@@ -598,9 +611,10 @@ File: ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM
 <use ../../../../../../../../Downloads/WhatsApp Image 2023-05-30 at 8.17.33 PM.
 jpeg>
 Package pdftex.def Info: ../../../../../../../../Downloads/WhatsApp Image 2023-
-05-30 at 8.17.33 PM.jpeg  used on input line 986.
+05-30 at 8.17.33 PM.jpeg  used on input line 1011.
 (pdftex.def)             Requested size: 386.26563pt x 88.33517pt.
- [13] (Notas Topologia.aux
+
+[13] (Notas Topologia.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
@@ -608,13 +622,13 @@ Package rerunfilecheck Info: File `"Notas Topologia".out' has not changed.
 (rerunfilecheck)             Checksum: 98B32DA14A8CF19A3025023FA10F4165;256.
  ) 
 Here is how much of TeX's memory you used:
- 12063 strings out of 476331
- 191939 string characters out of 5783953
+ 12084 strings out of 476331
+ 192457 string characters out of 5783953
  1874660 words of memory out of 5000000
- 32073 multiletter control sequences out of 15000+600000
- 519987 words of font info for 59 fonts, out of 8000000 for 9000
+ 32082 multiletter control sequences out of 15000+600000
+ 521031 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,393b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,393b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ThinkPad T470/AppData/Local/Progr
@@ -632,11 +646,12 @@ r5.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ThinkPad T470/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ThinkPad T470/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
-s/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler
-/eurm10.pfb>
-Output written on "Notas Topologia.pdf" (13 pages, 833310 bytes).
+s/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb><C:/Users/ThinkPad T470/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/euler/eurm10.pfb>
+Output written on "Notas Topologia.pdf" (13 pages, 858772 bytes).
 PDF statistics:
- 468 PDF objects out of 1000 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
- 32 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 281 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
